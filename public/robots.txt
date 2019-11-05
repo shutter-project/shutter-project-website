@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/uploads/wpcf7_uploads/
+Disallow: /wp-content/uploads/wpcf7_captcha/
+
+Sitemap: /sitemap.xml.gz

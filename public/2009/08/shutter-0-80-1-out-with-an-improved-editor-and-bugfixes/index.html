@@ -1,0 +1,774 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Shutter 0.80.1 out, with an improved editor and bugfixes | Shutter - Feature-rich Screenshot Tool</title>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/wp-content/themes/TheProfessional/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Shutter &#8211; Feature-rich Screenshot Tool RSS Feed" href="/feed/" />
+<link rel="alternate" type="application/atom+xml" title="Shutter &#8211; Feature-rich Screenshot Tool Atom Feed" href="/feed/atom/" />
+<link rel="pingback" href="/xmlrpc.php" />
+
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/TheProfessional/css/ie6style.css" />
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">DD_belatedPNG.fix('img#logo, ul.nav li.backLava, ul.nav li.backLava div.leftLava, #menu, #search-form, #featured, div.slide div.overlay, a#left-arrow, a#right-arrow, div.description, a.readmore, a.readmore span, ul.nav ul li a, #content-bottom, div.service img.service-icon, #controllers, #controllers-top, #controllers-main, #controllers a span.tooltip span.left-arrow, span.overlay, div.hr, #content-top, div.top-alt, div.bottom-alt, #content-bottom, #breadcrumbs span.sep');</script>
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/TheProfessional/css/ie7style.css" />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/TheProfessional/css/ie8style.css" />
+<![endif]-->
+
+<script type="text/javascript">
+	document.documentElement.className = 'js';
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="Shutter - Feature-rich Screenshot Tool &raquo; Shutter 0.80.1 out, with an improved editor and bugfixes Comments Feed" href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/feed/" />
+<meta content="TheProfessional v.1.1" name="generator"/><link rel='stylesheet' id='shadowbox-css-css'  href='/wp-content/plugins/shadowbox-js/shadowbox/shadowbox.css?ver=3.0.3' type='text/css' media='screen' />
+<link rel='stylesheet' id='shadowbox-extras-css'  href='/wp-content/plugins/shadowbox-js/css/extras.css?ver=3.0.3' type='text/css' media='screen' />
+<link rel='stylesheet' id='sociable-front-css-css'  href='/wp-content/plugins/sociable/sociable.css?ver=3.0.4' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-content/plugins/si-contact-form/captcha-secureimage/ctf_captcha.js?ver=3.0.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<script type='text/javascript' src='/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Shutter &#8211; Feature-rich Screenshot Tool' href='/' />
+<link rel='start' title='Welcome!' href='/2008/07/welcome/' />
+<link rel='prev' title='Shutter 0.80 released &#8211; great stuff inside' href='/2009/07/shutter-0-80-released-great-stuff-inside/' />
+<link rel='next' title='Shutter is Ubuntu Koala ready!' href='/2009/10/shutter-is-ubuntu-koala-ready/' />
+<meta name="generator" content="WordPress 3.0.4" />
+<link rel='shortlink' href='/?p=830' />
+
+<!-- All in One SEO Pack 1.6.13.1 by Michael Torbert of Semper Fi Web Design[302,408] -->
+<meta name="description" content="Shutter 0.80.1 is a bugfix release concentrating on 8 annoyances reported by our users, but there are some interesting improvements as well." />
+<meta name="keywords" content="blog,news,release" />
+<link rel="canonical" href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="/wp-content/plugins/degradable-html5-audio-and-video/incl/audio-player.js"></script>
+<script type="text/javascript">
+	AudioPlayer.setup("/wp-content/plugins/degradable-html5-audio-and-video/incl/player.swf", {
+		/* Format the player by inserting lines here. See http://wpaudioplayer.com/standalone */
+		width: 290,
+		initialvolume: 80
+	});
+</script>
+
+	<link rel="search" type="application/opensearchdescription+xml" href="/wp-content/plugins/open-search/open-search-xml.php" title="Shutter &#8211; Feature-rich Screenshot Tool : Search in posts" />
+
+<link rel="stylesheet" type="text/css" href="/wp-content/plugins/wp-recaptcha/recaptcha.css" />
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+            <span class="logolink">
+                <a href="">
+                    <img src="/wp-content/themes/TheProfessional/images/logo.png" alt="Shutter Logo" id="logo"/>
+                </a>
+             </span>
+			<div id="menu">
+									<ul class="nav">
+												
+						<li class="page_item page-item-2"><a href="/about/" title="About">About</a>
+<ul class='children'>
+	<li class="page_item page-item-866"><a href="/about/about-the-team/" title="The Team">The Team</a></li>
+	<li class="page_item page-item-358"><a href="/about/in-the-news/" title="In the News">In the News</a></li>
+</ul>
+</li>
+<li class="page_item page-item-17"><a href="/downloads/" title="Downloads">Downloads</a>
+<ul class='children'>
+	<li class="page_item page-item-1158"><a href="/downloads/third-party-packages/" title="Third Party Packages">Third Party Packages</a></li>
+	<li class="page_item page-item-1160"><a href="/downloads/source-code/" title="Source Code">Source Code</a></li>
+	<li class="page_item page-item-1162"><a href="/downloads/dependencies/" title="Dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="page_item page-item-237"><a href="/faq-help/" title="FAQ &amp; Help">FAQ &amp; Help</a>
+<ul class='children'>
+	<li class="page_item page-item-243"><a href="/faq-help/ppa-installation-guide/" title="PPA-Installation Guide">PPA-Installation Guide</a></li>
+	<li class="page_item page-item-476"><a href="/faq-help/set-shutter-as-the-default-screenshot-tool/" title="Shutter as default">Shutter as default</a></li>
+	<li class="page_item page-item-516"><a href="/faq-help/upload-to-flickr/" title="Upload to Flickr">Upload to Flickr</a></li>
+	<li class="page_item page-item-96"><a href="/faq-help/man-page/" title="Man Page">Man Page</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1194"><a href="/preview/" title="Preview">Preview</a>
+<ul class='children'>
+	<li class="page_item page-item-24"><a href="/preview/screenshots/" title="Screenshots">Screenshots</a>
+	<ul class='children'>
+		<li class="page_item page-item-619"><a href="/preview/screenshots/main-window/" title="Main window">Main window</a></li>
+		<li class="page_item page-item-599"><a href="/preview/screenshots/preferences/" title="Preferences">Preferences</a></li>
+		<li class="page_item page-item-633"><a href="/preview/screenshots/taking-a-screenshot/" title="Taking a screenshot">Taking a screenshot</a></li>
+		<li class="page_item page-item-661"><a href="/preview/screenshots/drawingtool/" title="DrawingTool">DrawingTool</a></li>
+		<li class="page_item page-item-654"><a href="/preview/screenshots/upload/" title="Upload">Upload</a></li>
+		<li class="page_item page-item-681"><a href="/preview/screenshots/plugins/" title="Plugins">Plugins</a></li>
+		<li class="page_item page-item-705"><a href="/preview/screenshots/multilanguage/" title="Multilanguage">Multilanguage</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-157"><a href="/preview/screencasts/" title="Screencasts">Screencasts</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1192"><a href="/contribute/" title="Contribute">Contribute</a></li>
+<li class="page_item page-item-370"><a href="/contact/" title="Contact">Contact</a></li>
+							<li class="cat-item cat-item-112"><a href="/category/blog/" title="View all posts filed under Blog">Blog</a>
+</li>
+					
+					</ul> <!-- end ul.nav -->
+								
+								
+				<div id="search-form">
+					<form method="get" id="searchform" action="">
+						<input type="text" value="search this site..." name="s" id="searchinput" />
+
+						<input type="image" src="/wp-content/themes/TheProfessional/images/search_btn.png" id="searchsubmit" />
+					</form>
+				</div> <!-- end #search-form -->
+			</div> <!-- end #menu -->		
+		</div> <!-- end #header -->
+		
+			<div id="content-top" class="top-alt"></div>
+	<div id="content" class="clearfix content-alt">
+		<div id="content-area">
+			<div id="breadcrumbs">
+		
+					<a href="">Home</a> <span class="sep"></span>
+				
+									<a href="/category/blog/">Blog</a><span class="sep"></span> Shutter 0.80.1 out, with an improved editor and bugfixes					
+</div> <!-- end #breadcrumbs -->
+											
+			<div class="entry clearfix post">
+				<h1 class="title">Shutter 0.80.1 out, with an improved editor and bugfixes</h1>
+					<p class="post-meta">
+		Posted  by <a href="/author/admin/" title="Posts by Romario">Romario</a> on Aug 7, 2009 in <a href="/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a>, <a href="/category/news/" title="View all posts in News" rel="category tag">News</a>, <a href="/category/release/" title="View all posts in release" rel="category tag">release</a> | <a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/#comments" title="Comment on Shutter 0.80.1 out, with an improved editor and bugfixes">22 comments</a>	</p>
+																
+							
+				<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.000339 seconds-->
+<!---Displayed in 0.012674 seconds.-->
+<p><a href="/about/">Shutter</a> 0.80.1 is a bugfix release concentrating on 8 annoyances reported by our users, but there are some interesting improvements as well.</p>
+<p>If you’ve added the Shutter <a href="../faq-help/ppa-installation-guide/">Ubuntu repository</a>, you’ll be notified about an update automatically – otherwise, see our <a href="/downloads/">downloads page</a>.</p>
+<p><span id="more-830"></span></p>
+<h2>New icons and cursors in the editor</h2>
+<p>In order to improve the usability and to help you creating more precise drawings we added a set of new cursors (inpired / borrowed from the <a href="http://inkscape.org">inkscape project</a>). Additionally we changed some of the old tool-icons to achieve a much more professional look.</p>
+<p><a href="/wp-content/uploads/cursor2.png" rel="shadowbox[post-830];player=img;" title="New '><img class="aligncenter size-thumbnail wp-image-833" title="New 'rectangle' cursor" src="/wp-content/uploads/cursor2-150x150.png" alt="New 'rectangle' cursor" width="150" height="150" /></a></p>
+<p><a href="/wp-content/uploads/cursor2.png" rel="shadowbox[post-830];player=img;"></a><a href="/wp-content/uploads/cursor1.png" rel="shadowbox[post-830];player=img;" title="New '><img class="aligncenter size-thumbnail wp-image-832" title="New 'freehand' cursor" src="/wp-content/uploads/cursor1-150x150.png" alt="New 'freehand' cursor" width="150" height="150" /></a></p>
+<h2>Insert cursors, hundreds of tango graphics and explore your current icon theme</h2>
+<p>If you are using icons and images to highlight parts of your screenshots as much as I do you&#8217;ll like the following changes.</p>
+<p>It is now possible to import all possible <a href="http://tango.freedesktop.org/Tango_Desktop_Project">tango icons</a> (separated by categories), cursors and even icons of your current icon theme.</p>
+<p><a href="/wp-content/uploads/insert_tango_theme.png" rel="shadowbox[post-830];player=img;" title="Insert tango icons"><img class="aligncenter size-thumbnail wp-image-837" title="Insert tango icons" src="/wp-content/uploads/insert_tango_theme-150x150.png" alt="Insert tango icons" width="150" height="150" /></a></p>
+<p><a href="/wp-content/uploads/insert-cursors.png" rel="shadowbox[post-830];player=img;" title="Insert cursors"><img class="aligncenter size-thumbnail wp-image-836" title="Insert cursors" src="/wp-content/uploads/insert-cursors-150x150.png" alt="Insert cursors" width="150" height="150" /></a></p>
+<p>We hope you enjoy this release!</p>
+<p>Detailed changelog is <a href="https://launchpad.net/shutter/+milestone/0.80.1">available here</a>.</p>
+
+<div class="sociable">
+<div class="sociable_tagline">
+<strong>Share and Enjoy:</strong>
+</div>
+<ul>
+	<li class="sociablefirst"><a rel="nofollow"  target="_blank" href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes&amp;bodytext=Shutter%200.80.1%20is%20a%20bugfix%20release%20concentrating%20on%208%20annoyances%20reported%20by%20our%20users%2C%20but%20there%20are%20some%20interesting%20improvements%20as%20well." title="Digg"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Digg" alt="Digg" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-235px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://slashdot.org/bookmark.pl?title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes&amp;url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F" title="Slashdot"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Slashdot" alt="Slashdot" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-145px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://reddit.com/submit?url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes" title="Reddit"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Reddit" alt="Reddit" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-55px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes&amp;notes=Shutter%200.80.1%20is%20a%20bugfix%20release%20concentrating%20on%208%20annoyances%20reported%20by%20our%20users%2C%20but%20there%20are%20some%20interesting%20improvements%20as%20well." title="del.icio.us"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="del.icio.us" alt="del.icio.us" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-199px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes&amp;annotation=Shutter%200.80.1%20is%20a%20bugfix%20release%20concentrating%20on%208%20annoyances%20reported%20by%20our%20users%2C%20but%20there%20are%20some%20interesting%20improvements%20as%20well." title="Google Bookmarks"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Google Bookmarks" alt="Google Bookmarks" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-91px -19px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://identi.ca/notice/new?status_textarea=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F" title="Identi.ca"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Identi.ca" alt="Identi.ca" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-235px -19px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes" title="StumbleUpon"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="StumbleUpon" alt="StumbleUpon" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-217px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://twitter.com/home?status=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes%20-%20http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F" title="Twitter"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Twitter" alt="Twitter" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-343px -55px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes&amp;source=Shutter+-+Feature-rich+Screenshot+Tool+Shutter+is+an+open-source+program%2C+and+is+available+completely+for+free%21&amp;summary=Shutter%200.80.1%20is%20a%20bugfix%20release%20concentrating%20on%208%20annoyances%20reported%20by%20our%20users%2C%20but%20there%20are%20some%20interesting%20improvements%20as%20well." title="LinkedIn"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="LinkedIn" alt="LinkedIn" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-1px -37px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;t=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes" title="Facebook"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Facebook" alt="Facebook" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-343px -1px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://www.mixx.com/submit?page_url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes" title="Mixx"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Mixx" alt="Mixx" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-91px -37px" class="sociable-hovers" /></a></li>
+	<li><a rel="nofollow"  target="_blank" href="http://ping.fm/ref/?link=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F&amp;title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes&amp;body=Shutter%200.80.1%20is%20a%20bugfix%20release%20concentrating%20on%208%20annoyances%20reported%20by%20our%20users%2C%20but%20there%20are%20some%20interesting%20improvements%20as%20well." title="Ping.fm"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Ping.fm" alt="Ping.fm" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-271px -37px" class="sociable-hovers" /></a></li>
+	<li class="sociablelast"><a rel="nofollow"  target="_blank" href="http://www.netvibes.com/share?title=Shutter%200.80.1%20out%2C%20with%20an%20improved%20editor%20and%20bugfixes&amp;url=http%3A%2F%2Fshutter-project.org%2F2009%2F08%2Fshutter-0-80-1-out-with-an-improved-editor-and-bugfixes%2F" title="Netvibes"><img src="/wp-content/plugins/sociable/images/services-sprite.gif" title="Netvibes" alt="Netvibes" style="width: 16px; height: 16px; background: transparent url(/wp-content/plugins/sociable/images/services-sprite.png) no-repeat; background-position:-199px -37px" class="sociable-hovers" /></a></li>
+</ul>
+</div>
+								
+
+<br />
+<br />
+
+<br />
+
+
+			</div> <!-- end .entry -->
+                
+            				
+						
+			<!-- You can start editing here. -->
+
+<div id="comment-wrap">
+
+	
+			<h3 id="comments">22 Comments</h3>
+		
+			<ol class="commentlist clearfix">
+			   <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-2296">
+   <div id="comment-2296" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2296">19. November 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p><a href="#comment-2288" rel="nofollow">@Christian I. Ionescu</a><br />
+`shutter &#8211;full` starts Shutter with the last saved settings and takes a full screen screenshot to the directory you&#8217;ve configured in the Shutter&#8217;s preferences.<br />
+This command could be easily used in a shell script for example &#8211; with a `sleep` command to get the desired delay working.<br />
+But, to be honest, I don&#8217;t know if Shutter is the best application to do this. You could also use import or scrot in shell scripts.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2296#respond' onclick='return addComment.moveForm("comment-2296", "2296", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2288">
+   <div id="comment-2288" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/b15dcebf17e2db56207e9d1043d93ecb?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Christian I. Ionescu</span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2288">17. November 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Hi!</p>
+<p>Firstly, thank you for this great application that could be used in infinite ways.</p>
+<p>Secondly, I have a question: how could I make it take a regular screenshot and save it in a certain folder. I would like to make it take a screenshot of the full screen at each 10 minutes and save it in a certain folder.</p>
+<p>God bless us all!<br />
+Christian</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2288#respond' onclick='return addComment.moveForm("comment-2288", "2288", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-2165">
+   <div id="comment-2165" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2165">25. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p><a href="#comment-2149" rel="nofollow">@d0od</a><br />
+Hm, I&#8217;ve nearly the same system / configuration and everything works fine. Could you please try to produce a screenshot of the error and paste the complete error message here?<br />
+It might also be useful to launch Shutter via terminal, enable the debug mode and paste the output here as well. Of course, you can also open a new bug at launchpad.net to avoid cluttering the comment section:<br />
+<a href="https://bugs.launchpad.net/shutter" rel="nofollow">https://bugs.launchpad.net/shutter</a></p>
+<p>Thanks for your help and patience.<br />
+Mario</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2165#respond' onclick='return addComment.moveForm("comment-2165", "2165", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2149">
+   <div id="comment-2149" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/9eff4fa625a2bd86197dd6523d86d691?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://omgubuntu.co.uk' rel='external nofollow' class='url'>d0od</a></span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2149">21. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p><a href="#comment-2147" rel="nofollow">@Romario</a> </p>
+<p>Sure <img src='/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>Running Ubuntu Karmic Beta x86_64<br />
+imagemagick_6.5.1.0-1.1<br />
+System AMD x2 @ 3.0Ghz, 4GB RAM</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2149#respond' onclick='return addComment.moveForm("comment-2149", "2149", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-2147">
+   <div id="comment-2147" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2147">21. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p><a href="#comment-2145" rel="nofollow">@d0od</a><br />
+Could you please post a few details about your system? What distro are you using and what version of imagemagick is installed (run convert &#8211;version in a terminal)? I assume that the version that is installed on your system is tool old&#8230;</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2147#respond' onclick='return addComment.moveForm("comment-2147", "2147", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2145">
+   <div id="comment-2145" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://0.gravatar.com/avatar/2623034032315d5cf0bcf5e213ff5547?s=57&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://omgubuntu.co.uk' rel='external nofollow' class='url'>d0od</a></span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2145">20. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>I love Shutter to pieces. I&#8217;m only gutted that half of the plugins don&#8217;t work for me. I get unspecified error. Makes creating screenshots for my blog take a little longer than i want because i have to fire up the Gimp to twist them in 3D space or turn them polaroid style..</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2145#respond' onclick='return addComment.moveForm("comment-2145", "2145", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment even thread-even depth-1" id="li-comment-2104">
+   <div id="comment-2104" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://0.gravatar.com/avatar/2c4334515ea71b48b9adc5e986c1c71c?s=57&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Zac</span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2104">11. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Still using shutter regularly. Thanks again.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2104#respond' onclick='return addComment.moveForm("comment-2104", "2104", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-2071">
+   <div id="comment-2071" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2071">5. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p><a href="#comment-2061" rel="nofollow">@Helge</a><br />
+That sounds interesting, indeed. Thanks for your input. I&#8217;ll think about it&#8230;</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2071#respond' onclick='return addComment.moveForm("comment-2071", "2071", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment even thread-even depth-1" id="li-comment-2063">
+   <div id="comment-2063" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/1186f27888f216dc83c526b15ff35ef9?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://blog.linux-redaktion.com' rel='external nofollow' class='url'>Liane</a></span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2063">2. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p><a href="#comment-2060" rel="nofollow">@Romario</a><br />
+@Mario: Thanks a lot. I am really looking forward to this.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2063#respond' onclick='return addComment.moveForm("comment-2063", "2063", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2061">
+   <div id="comment-2061" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/d305c15bb753c795d5e6aaa5dc9904a7?s=57&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D57&amp;r=G' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Helge</span> <div class="comment-meta commentmetadata"><a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-2/#comment-2061">2. October 2009</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p><a href="#comment-2057" rel="nofollow">@Romario</a><br />
+Hi,<br />
+I can tell you how I use Zoomit during a presentation: Zoomit runs in the background with a symbol in the tray just like Shutter.<br />
+If someone asks about a point on a slide, I quickly press Ctrl-2, Zoomit takes a screenshot of the whole screen and immideately views it full screen.<br />
+I can now draw freehand on the presentation with the mouse, draw rectangles with Shift+mouse, add text after pressing shortcut &#8220;t&#8221;, switch drawing/text color to red with &#8220;r&#8221;, blue with &#8220;b&#8221; etc. Since I work on the screenshot it looks to the audience as I work on the presentation itself. If I press &#8220;w&#8221; the whole screen is white, &#8220;k&#8221; black. If I want to zoom in on a detail in the screenshot I use the mouse wheel. Change the line width with shift+mouse wheel. When the audience is happy I can press ESC to go back to the presentation, or save the annotated screenshot with Ctrl-s. Feature wise shutter seems very close to be able to do these tricks, except the ability to edit the screenshot in full screen mode with no menus <img src='/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /><br />
+thanks again for a great tool,<br />
+Helge</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/?replytocom=2061#respond' onclick='return addComment.moveForm("comment-2061", "2061", "respond", "830")'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li>
+		</ol>
+		
+		<div class="navigation">
+			<div class="alignleft">
+				<a href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/comment-page-1/#comments" >&laquo; Older Comments</a>			</div>
+			<div class="alignright">
+							</div>
+		</div>
+		
+		<div id="trackbacks">
+		<br />
+		<br />
+		<h3 id="comments">Trackbacks/Pingbacks</h3>
+		<ol class="pinglist">
+				<li id="comment-1785"><a href='http://linuxfreedomforlive.com/?p=1201' rel='external nofollow' class='url'>Shutter &#8211; Screenshot Tool 0.81 su Ubuntu (GetDeb) | LinuX Freedom for Live</a> - [...] Shutter (oppure GScrot) è un software specifico per creare e migliorare screenshot del nostro pc. Attraverso questo software possiamo ... 
+</li>
+	<li id="comment-1779"><a href='http://linuxfreedomforlive.com/?p=1153' rel='external nofollow' class='url'>Shutter &#8211; Screenshot Tool 0.81 su LinuX | LinuX Freedom for Live</a> - [...] Shutter (oppure GScrot) è un software specifico per creare e migliorare screenshot del nostro pc. Attraverso questo software possiamo ... 
+</li>
+		</ol>
+	</div>
+		
+
+	<div id="respond">
+		<h3 id="comments">
+			Leave a Reply		</h3>
+		<div class="cancel-comment-reply"> <small>
+			<a rel="nofollow" id="cancel-comment-reply-link" href="/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/#respond" style="display:none;">Click here to cancel reply.</a>			</small> </div> <!-- end cancel-comment-reply div -->
+					<form action="/wp-comments-post.php" method="post" id="commentform">
+							<p>
+					<input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+					<label for="author"><small>Name						(required)						</small></label>
+				</p>
+				<p>
+					<input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+					<label for="email"><small>Mail (will not be published)						(required)						</small></label>
+				</p>
+				<p>
+					<input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+					<label for="url"><small>Website</small></label>
+				</p>
+						<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+			<p>
+				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+			</p>
+			<p>
+				<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+				<input type='hidden' name='comment_post_ID' value='830' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+			</p>
+			<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6b24c3f869" /></p>
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">Notify me of followup comments via e-mail</label>
+	</p>
+
+
+		<script type='text/javascript'>
+				var RecaptchaOptions = { theme : 'clean', lang : 'en' , tabindex : 5 };
+		</script><script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LefUL0SAAAAAGPdQ0mADSfhYrPqNul7zUMIbSI4"></script>
+
+<noscript>
+<iframe src="http://api.recaptcha.net/noscript?k=6LefUL0SAAAAAGPdQ0mADSfhYrPqNul7zUMIbSI4" height="300" width="500" frameborder="0"></iframe><br/>
+<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+</noscript>				<div id="recaptcha-submit-btn-area"></div> 
+				<script type='text/javascript'>
+				var sub = document.getElementById('submit');
+				sub.parentNode.removeChild(sub);
+				document.getElementById('recaptcha-submit-btn-area').appendChild (sub);
+				document.getElementById('submit').tabIndex = 6;
+				if ( typeof _recaptcha_wordpress_savedcomment != 'undefined') {
+						document.getElementById('comment').value = _recaptcha_wordpress_savedcomment;
+				}
+				document.getElementById('recaptcha_table').style.direction = 'ltr';
+				</script>
+				<noscript>
+				 <style type='text/css'>#submit {display:none;}</style>
+				 <input name="submit" type="submit" id="submit-alt" tabindex="6" value="Submit Comment"/> 
+				</noscript>			</form>
+			</div> <!-- end respond div -->
+</div>				
+		</div> <!-- end #content-area -->
+		
+		<div id="sidebar">
+	
+	<div id="text-345411014" class="widget widget_text"><h3 class="widgettitle">Find us on Launchpad</h3>			<div class="textwidget"><a href="https://launchpad.net/shutter"><img src="http://media.launchpad.net/lp-badge-kit/launchpad-badge-w160px.png" alt="Launchpad logo" style="border: none;"></a></div>
+		</div> <!-- end .widget --><div id="text-345411013" class="widget widget_text"><h3 class="widgettitle">Help promote this idea!</h3>			<div class="textwidget"><a href="http://brainstorm.ubuntu.com/idea/25383/">
+<img src="http://brainstorm.ubuntu.com/idea/25383/image/1/" width="250" height="67" />
+</a></div>
+		</div> <!-- end .widget -->
+<!---Begin Display of Random Image sidebar widget-->
+<div id="random_image-2" class="widget widget_many"><h3 class="widgettitle">Screenshots</h3><!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.000399 seconds-->
+<div id="random_image_wrapper" style="text-align:center;"><span></span>
+<a href="/screenshots/"><img style = "padding: 3px 3px 3px 3px;" src="/wp-content/uploads/random/screenshot_084.png" width="240" alt="" /></a>
+
+
+</div>
+<!---Displayed in -0.98695 seconds.-->
+</div> <!-- end .widget --><div id="text-345411011" class="widget widget_text"><h3 class="widgettitle">Support Us</h3>			<div class="textwidget">Shutter is an open-source program, and is available completely for free!
+<p>
+If you like Shutter and find it useful, help keep it actively developed by clicking the donate button or sending me a gift from my Amazon wishlist. You can even flattr our thing!
+</p>
+<div style="text-align: center;">
+
+<br />
+<a href="http://flattr.com/thing/23370/Shutter-Screenshot-Tool" target="_blank">
+<img src="http://api.flattr.com/button/button-static-50x60.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+
+<br />
+<br />
+<a target="_blank" title="Amazon Wish List" href="https://www.amazon.de/wishlist/2ZAJUPER8NUBZ/ref=wl_web"><img src="/wp-content/uploads/amazon.jpg" alt="My Amazon.com Wish List" border="0" /></a>
+
+<br />
+<br />
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4240942">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div></div>
+		</div> <!-- end .widget -->		<div id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widgettitle">Latest Articles</h3>		<ul>
+				<li><a href="/2010/09/shutter-0-86-4-is-out-get-it-now/" title="0.86.4 is out! Get it now!">0.86.4 is out! Get it now!</a></li>
+				<li><a href="/2010/08/shutter-0-86-3-adds-integration-with-ubuntu-one-and-new-icons/" title="Shutter meets Cloud">Shutter meets Cloud</a></li>
+				<li><a href="/2010/07/new-opensuse-packages/" title="New openSUSE packages">New openSUSE packages</a></li>
+				<li><a href="/2010/05/how-to-reanimate-disabled-features/" title="How to reanimate disabled features">How to reanimate disabled features</a></li>
+				<li><a href="/2010/04/shutter-0-86-2-fixes-bugs-and-improves-drag-and-drop/" title="Shutter 0.86.2 fixes bugs and improves Drag and Drop">Shutter 0.86.2 fixes bugs and improves Drag and Drop</a></li>
+				</ul>
+		</div> <!-- end .widget -->		
+</div> <!-- end #sidebar -->		
+	</div> <!-- end #content -->
+	<div id="content-bottom" class="bottom-alt"></div>
+	
+		<div id="footer" class="clearfix">
+			<p id="copyright">Designed by  <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> | Powered by  <a href="http://www.wordpress.org">Wordpress</a></p>
+		</div> <!-- end #footer -->
+		
+	</div> <!-- end #container -->	
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/jquery.cycle.all.min.js"></script> 
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/superfish.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/jquery.lavalamp.1.3.3-min.js"></script>	
+	<script type="text/javascript">
+	//<![CDATA[
+		jQuery.noConflict();
+	
+		jQuery('ul.nav').superfish({ 
+			delay:       200,                            // one second delay on mouseout 
+			animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation 
+			speed:       'fast',                          // faster animation speed 
+			autoArrows:  true,                           // disable generation of arrow mark-up 
+			dropShadows: false                            // disable drop shadows 
+		});
+		
+		jQuery('ul.nav > li > a.sf-with-ul').parent('li').addClass('sf-ul');
+		
+		
+		<!---- lavalamp ---->
+		jQuery('ul.nav ul > li').addClass('noLava');
+			
+		var startLink = 0;
+		
+		jQuery('ul.nav > li.current-cat-parent, ul.nav > li.current-cat, ul.nav > li.current_page_parent, ul.nav > li.current_page_item').each(function(){
+			startLink = jQuery(this).prevAll().length;
+		});
+		
+		jQuery('ul.nav').lavaLamp({ startItem: startLink });
+		if ( startLink !=0 ) jQuery('ul.nav > li.backLava').animate({left:'+=2'},0);
+		
+		
+		et_search_bar();
+		et_cycle_integration();
+		
+				
+		jQuery('#controllers-main a').hover(function(){
+			jQuery(this).find('span.tooltip').animate({ opacity: 'show', left: '-222px' }, 300);
+		},function(){
+			jQuery(this).find('span.tooltip').animate({ opacity: 'hide', left: '-232px' }, 300);
+		}); 
+		
+		
+		function et_cycle_integration(){
+			var $featured = jQuery('#featured'),
+				$featured_content = jQuery('#slides'),
+				$controller = jQuery('#controllers'),
+				$slider_control_tab = $controller.find('a');
+		
+			if ($featured_content.length) {
+				$controller.css("opacity","0").find('a img').css("opacity","0.7").end().find('a.active img').css("opacity","1");
+				
+				$featured_content.cycle({
+					fx: 'fade',
+					timeout: 0,
+					speed: 700,
+					cleartypeNoBg: true
+				});
+				
+			};
+			
+			var pause_scroll = false;
+			
+			jQuery('#slides, #controllers').hover(function(){
+				$controller.stop().animate({opacity: 1, top: "30px"},500);
+							}).mouseleave(function(){
+				$controller.stop().animate({opacity: 0, top: "15px"},500);
+							});
+			
+			$slider_control_tab.hover(function(){
+				jQuery(this).find('img').stop().animate({opacity: 1},300);
+			}).mouseleave(function(){
+				if (!jQuery(this).hasClass("active")) jQuery(this).find('img').stop().animate({opacity: 0.7},300);
+			});
+			
+			
+			var ordernum;				
+			
+			function gonext(this_element){
+				$controller.find("a.active img").stop().animate({opacity: 0.7},300).parent('a').removeClass('active');
+				
+				this_element.addClass('active').find('img').stop().animate({opacity: 1},300);
+				
+				ordernum = this_element.attr("rel");
+				$featured_content.cycle(ordernum-1);
+				
+				if (typeof interval != 'undefined') {
+					clearInterval(interval);
+					auto_rotate();
+				};
+			}
+			
+			$slider_control_tab.click(function(){
+				gonext(jQuery(this));
+				return false;
+			});
+			
+			
+			var $nextArrow = jQuery('a#right-arrow'),
+				$prevArrow = jQuery('a#left-arrow');
+			
+			$nextArrow.click(function(){
+				var activeSlide = $controller.find('a.active').attr("rel"),
+					$nextSlide = $controller.find('a:eq('+ activeSlide +')');
+				
+				if ($nextSlide.length) gonext($nextSlide)
+				else gonext($controller.find('a:eq(0)'));
+				
+				return false;
+			});
+			
+			$prevArrow.click(function(){
+				var activeSlide = $controller.find('a.active').attr("rel")-2,
+					$nextSlide = $controller.find('a:eq('+ activeSlide +')');
+								
+				if ($nextSlide.length && activeSlide != -1) { gonext($nextSlide); }
+				else {
+					var slidesNum = $slider_control_tab.length - 1;
+					gonext($controller.find('a:eq('+ slidesNum +')'));
+				};
+				
+				return false;
+			});
+					
+						
+						
+			function auto_rotate(){
+				interval = setInterval(function() {
+					if (!pause_scroll) $nextArrow.click();
+				}, 4000);
+			};
+				
+		};
+		
+		
+		<!---- Search Bar Improvements ---->
+		function et_search_bar(){
+			var $searchform = jQuery('#menu div#search-form'),
+				$searchinput = $searchform.find("input#searchinput"),
+				searchvalue = $searchinput.val();
+				
+			$searchinput.focus(function(){
+				if (jQuery(this).val() === searchvalue) jQuery(this).val("");
+			}).blur(function(){
+				if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
+			});
+		};
+		
+				
+	//]]>	
+	</script>	<!-- Piwik plugin active -->				<!-- Piwik code inserted by Piwik Analytics Wordpress plugin by Jules Stuifbergen http://forwardslash.nl/piwik-analytics/ -->
+				<script type="text/javascript">
+									var pkBaseURL = document.location.protocol + "//" + document.location.host + "/piwik/";
+								document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+				</script><script type="text/javascript">
+				try {
+				var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+				piwikTracker.setDocumentTitle(document.title);
+				piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+							} catch( err ) {}
+				</script>
+				<!-- /Piwik -->
+	<script type='text/javascript' src='/wp-content/uploads/shadowbox-js/3ba822b887ce2563cb0e042f6fab2b4c.js?ver=3.0.3'></script>
+
+<!-- Begin Shadowbox JS -->
+<script type="text/javascript">
+	var shadowbox_conf = {
+		animate: true,
+		animateFade: false,
+		animSequence: "sync",
+		autoDimensions: false,
+		modal: false,
+		showOverlay: true,
+		overlayColor: "#000",
+		overlayOpacity: 0.8,
+		flashBgColor: "#000000",
+		autoplayMovies: true,
+		showMovieControls: true,
+		slideshowDelay: 0,
+		resizeDuration: 0.35,
+		fadeDuration: 0.15,
+		displayNav: true,
+		continuous: false,
+		displayCounter: true,
+		counterType: "default",
+		counterLimit: 10,
+		viewportPadding: 20,
+		handleOversize: "resize",
+		handleUnsupported: "link",
+		initialHeight: 160,
+		initialWidth: 320,
+		enableKeys: true,
+		skipSetup: false,
+		flashParams: {bgcolor:"#000000", allowFullScreen:true},
+		flashVars: {},
+		flashVersion: "9.0.0"
+
+	};
+	Shadowbox.init(shadowbox_conf);
+</script>
+<!-- End Shadowbox JS -->
+
+	
+</body>
+</html>

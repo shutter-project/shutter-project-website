@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News &#8211; Shutter &#8211; Feature-rich Screenshot Tool</title>
+	<atom:link href="/category/news/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>Shutter is an open-source program, and is available completely for free!</description>
+	<lastBuildDate>Wed, 24 Dec 2014 11:19:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>New bugfix release 0.93.1</title>
+		<link>/2014/12/new-bugfix-release-0-93-1/</link>
+		<comments>/2014/12/new-bugfix-release-0-93-1/#comments</comments>
+		<pubDate>Wed, 24 Dec 2014 11:19:24 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[icon]]></category>
+
+		<guid isPermaLink="false">/?p=1709</guid>
+		<description><![CDATA[Shutter 0.93.1 fixes a few minor bugs and adds updated translations.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00035699999999994 seconds-->
+<!---Displayed in 0.011573 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.93.1 fixes a few minor bugs and adds updated translations.</p>
+<p><span id="more-1709"></span></p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>
+  * updated Dropbox.pm and XFIXES.pm
+  * fixed deprecated code 
+  * updated translations
+</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2014/12/new-bugfix-release-0-93-1/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>Shutter 0.93 released</title>
+		<link>/2014/08/shutter-0-93-released/</link>
+		<comments>/2014/08/shutter-0-93-released/#comments</comments>
+		<pubDate>Sun, 17 Aug 2014 19:24:50 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[dropbox]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[upload]]></category>
+		<category><![CDATA[uploading]]></category>
+
+		<guid isPermaLink="false">/?p=1693</guid>
+		<description><![CDATA[This release improves Shutter's Dropbox integration and adds support for vgy.me.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00034100000000004 seconds-->
+<!---Displayed in 0.011152 seconds.-->
+			<content:encoded><![CDATA[<p>This release improves Shutter&#8217;s Dropbox integration and adds support for vgy.me.<br />
+<span id="more-1693"></span></p>
+<h2>Improved Dropbox integration</h2>
+<p>Kudos go to Marco van Hilst who rewrote (and improved/fixed) the existing plugin. Here is why (<a href="https://bugs.launchpad.net/shutter/+bug/1349512" target="_blank">bug report</a>):</p>
+<p>The current Dropbox plugin used the deprecated Public folder functionality of Dropbox. Dropbox dropped support for the Public folder for free accounts that registered after the drop deadline in favor of individual share link creation.</p>
+<p id="yui_3_10_3_1_1408302296400_1598">The current Perl library binding for Dropbox&#8217;s RESTful HTTP API, Net::Dropbox::API, is old and therefore does not support the new /share and /media functions that generate proper links to the files. Attempting to upload via Dropbox with the plugin in its current state will successfully upload to the Public folder of one&#8217;s Dropbox, but will yield an invalid link that will display a 404 when opened in a browser.</p>
+<p> <a href="/wp-content/uploads/shutter_dropbox.png" rel="shadowbox[sbpost-1693];player=img;"><img class="aligncenter size-medium wp-image-1697" src="/wp-content/uploads/shutter_dropbox-300x149.png" alt="shutter_dropbox" width="300" height="149" srcset="/wp-content/uploads/shutter_dropbox-300x149.png 300w, /wp-content/uploads/shutter_dropbox.png 594w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h2>Added support for vgy.me</h2>
+<p>Swooshy wrote an upload script for vgy.me, which is an image hosting service a friend of him made. Thanks!</p>
+<p>&nbsp;</p>
+<h2>Want to develop an upload plugin?</h2>
+<p>All you need is a) some knowledge of <a href="http://en.wikipedia.org/wiki/Perl" target="_blank">Perl</a> b) this <a title="Developers" href="/contribute/developers/">template</a>!</p>
+<h2>How to install?</h2>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/" target="_blank">downloads page</a> for individual packages. Updates for other distributions will be available soon. Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #1163251
+       [Dropbox plugin doesn't work since it uses an old version of the API]
+    -- LP: #1250536
+       [Error Dropbox authentication and upload]
+    -- LP: #1298878
+       [vgy.me support]
+    -- LP: #1349512
+       [Dropbox plugin uses Public folder and does not create proper share link]
+</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2014/08/shutter-0-93-released/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>New bugfix release 0.92</title>
+		<link>/2014/08/new-bugfix-release-0-92/</link>
+		<comments>/2014/08/new-bugfix-release-0-92/#comments</comments>
+		<pubDate>Sun, 10 Aug 2014 12:23:39 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[fixes]]></category>
+
+		<guid isPermaLink="false">/?p=1681</guid>
+		<description><![CDATA[Shutter 0.92 fixes a few important bugs and removes plugins of discontinued services (e.g. UbuntuOne).]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00033799999999995 seconds-->
+<!---Displayed in 0.010548 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.92 fixes a few important bugs and removes plugins of discontinued services (e.g. UbuntuOne).</p>
+<p><span id="more-1681"></span></p>
+<p>The following upload plugins were removed:</p>
+<ul>
+<li>UbuntuOne</li>
+<li>ImageBanana</li>
+<li>Ompldr</li>
+</ul>
+<p>&nbsp;</p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #731874
+       [Launching a second instance causes a crash - ArchLinux]
+    -- LP: #1034768
+       [Segmentation fault (core dumped) when trying to edit an image]
+    -- LP: #1285287
+       [Crashes after clicking "edit" while using certain icon themes]
+    -- LP: #1334869
+       [Shutter: ImageBanana no loger active....]
+    -- LP: #1351015
+       [Remove Ubuntu One]
+</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2014/08/new-bugfix-release-0-92/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>New bugfix release 0.91</title>
+		<link>/2014/06/new-bugfix-release-0-91/</link>
+		<comments>/2014/06/new-bugfix-release-0-91/#comments</comments>
+		<pubDate>Sat, 14 Jun 2014 09:33:39 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[icon]]></category>
+
+		<guid isPermaLink="false">/?p=1677</guid>
+		<description><![CDATA[Shutter 0.91 fixes a few bugs and adds an updated application icon by Lucas Romero Di Benedetto.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00032599999999994 seconds-->
+<!---Displayed in 0.011123 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.91 fixes a few bugs and adds an updated application icon by Lucas Romero Di Benedetto.</p>
+<p><span id="more-1677"></span></p>
+<p><img class="aligncenter" src="https://lh4.googleusercontent.com/-aw1tPEJbWl0/UiE10p0ywKI/AAAAAAAAQGQ/Kl-W9sfj4dk/w458-h624-no/compare.png" alt="New icon" width="458" height="624" /></p>
+<p>&nbsp;</p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #1243649
+       [Add new icon]
+    -- LP: #1308485
+       [immio has been closed]
+    -- LP: #1314893
+       [Session tab no longer shows thumbnails]
+</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2014/06/new-bugfix-release-0-91/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>New bugfix release 0.90.1</title>
+		<link>/2013/08/new-bugfix-release-0-90-1/</link>
+		<comments>/2013/08/new-bugfix-release-0-90-1/#comments</comments>
+		<pubDate>Sun, 25 Aug 2013 22:09:04 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[translations]]></category>
+
+		<guid isPermaLink="false">/?p=1672</guid>
+		<description><![CDATA[Shutter 0.90.1 fixes a few bugs and updates translations.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00034000000000001 seconds-->
+<!---Displayed in 0.010605 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.90.1 fixes a few bugs and updates translations.</p>
+<p><span id="more-1672"></span><img title="More..." alt="" src="/wp-includes/js/tinymce/plugins/wordpress/img/trans.gif" /></p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>   * Fixed bugs / minor improvements
+    -- LP: #1092522
+       [Shutter doesn't recognize the command-line option "-d"]
+    -- LP: #1191521
+       [--delay=0 doesn't work from command-line]
+    -- LP: #1216619
+       [Drawing Tool: encoding problems when using chinese fonts]
+  * updated translations</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2013/08/new-bugfix-release-0-90-1/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Shutter 0.90 released</title>
+		<link>/2012/12/shutter-0-90-released/</link>
+		<comments>/2012/12/shutter-0-90-released/#comments</comments>
+		<pubDate>Wed, 19 Dec 2012 12:13:51 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[appindicator]]></category>
+		<category><![CDATA[application indicator]]></category>
+		<category><![CDATA[bugfix]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[fixes]]></category>
+
+		<guid isPermaLink="false">/?p=1624</guid>
+		<description><![CDATA[This release fixes bugs and removes some error prone (or unused) features.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00033899999999998 seconds-->
+<!---Displayed in 0.011224 seconds.-->
+			<content:encoded><![CDATA[<p>This release fixes bugs and removes some error prone (or unused) features.<br />
+<span id="more-1624"></span></p>
+<h2>Code removal</h2>
+<ul>
+<li>Application</li>
+</ul>
+<p>In order to keep Shutter&#8217;s codebase easier to maintain we&#8217;ve decided to remove some of the error prone features. In fact, we&#8217;ve removed the keybinding code (code needs to be written for every single desktop environment) and the Simple Selection Tool (superseeded by the Advanced Selection Tool). I you still want to launch Shutter via hotkey (e.g. Print) we have prepared <a title="Shutter as default" href="/faq-help/set-shutter-as-the-default-screenshot-tool/" target="_blank">detailed instructions</a> for the most popular DEs.</p>
+<ul>
+<li>Plugins</li>
+</ul>
+<p>Due to licensing issues it was necessary to remove three plugins (3Dreflection, 3Drotate, bordereffects). The plugins are based on scripts written by Fred Weinhaus and he asked me to remove them from our distribution. If you agree to the <a href="http://www.fmwconcepts.com/imagemagick/" target="_blank">license</a> you can still use the plugins. We are preparing a step-by-step-guide.</p>
+<h2>Improved AppIndicator</h2>
+<p>This releases adds a new option to show the main window (useful when running Unity).</p>
+<div id="attachment_1627" style="width: 273px" class="wp-caption aligncenter"><a href="/2012/12/shutter-0-90-released/tn1kkvavtt/" rel="attachment wp-att-1627"><img class="size-medium wp-image-1627" alt="Show main window" src="/wp-content/uploads/tn1KkVAVtT-263x300.png" width="263" height="300" srcset="/wp-content/uploads/tn1KkVAVtT-263x300.png 263w, /wp-content/uploads/tn1KkVAVtT.png 382w" sizes="(max-width: 263px) 100vw, 263px" /></a><p class="wp-caption-text">Show main window</p></div>
+<h2>You are a package maintainer?</h2>
+<p>Please have a look at our <a title="Dependencies" href="/downloads/dependencies/">list of dependencies</a> to check if your current package does fulfill the needs of the new version. If you have any questions, please feel free to <a title="Contact" href="/contact/">contact</a> us. <strong>This release removes the following dependency:</strong></p>
+<ul>
+<li>libgnome2-gconf-perl (Gnome2::GConf)</li>
+</ul>
+<h2>How to install?</h2>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/" target="_blank">downloads page</a> for individual packages. Updates for other distributions will be available soon. Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #1035259
+       [No way to activate the main window when using the appindicator]
+    -- LP: #1081917
+       [Quicklist no more working]
+    -- LP: #1083033
+       [Needs a high contrast app icon]
+    -- LP: #1083586
+       [Remove keybinding code]
+    -- LP: #1083588
+       [Remove Simple Selection Tool]
+    -- LP: #1087367
+       [File extension .png]
+    -- LP: #1092054
+       [desktop-file-validate complains again]
+  * updated translations</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2012/12/shutter-0-90-released/feed/</wfw:commentRss>
+		<slash:comments>18</slash:comments>
+		</item>
+		<item>
+		<title>New bugfix release 0.89.1</title>
+		<link>/2012/08/new-bugfix-release-0-89-1/</link>
+		<comments>/2012/08/new-bugfix-release-0-89-1/#comments</comments>
+		<pubDate>Wed, 15 Aug 2012 22:23:51 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[imageshack]]></category>
+		<category><![CDATA[imgur]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[upload]]></category>
+
+		<guid isPermaLink="false">/?p=1616</guid>
+		<description><![CDATA[Shutter 0.89.1 fixes a few bugs and updates translations.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00034299999999998 seconds-->
+<!---Displayed in 0.011128 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.89.1 fixes a few bugs and updates translations.</p>
+<p><span id="more-1616"></span><img title="More..." src="/wp-includes/js/tinymce/plugins/wordpress/img/trans.gif" alt="" /></p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #1007712
+       [imageshack plug in fails]
+    -- LP: #1020600
+       [bug on save output image in cyrillic keybord layout]
+    -- LP: #1021158
+       [Imgur plugin doesn't work]
+    -- LP: #1033931
+       [libgtk2-appindicator-perl not available for lucid (Ubuntu 10.04)]
+    -- LP: #1035332
+       [desktop-file-validate complains]
+  * updated translations</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2012/08/new-bugfix-release-0-89-1/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Shutter 0.89 released</title>
+		<link>/2012/08/shutter-0-89-released/</link>
+		<comments>/2012/08/shutter-0-89-released/#comments</comments>
+		<pubDate>Thu, 02 Aug 2012 18:05:17 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[appindicator]]></category>
+		<category><![CDATA[application indicator]]></category>
+		<category><![CDATA[bugfix]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[icon]]></category>
+		<category><![CDATA[status icon]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[unity]]></category>
+
+		<guid isPermaLink="false">/?p=1607</guid>
+		<description><![CDATA[This release adds support for Application Indicators and fixes bugs.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00034699999999999 seconds-->
+<!---Displayed in 0.010645 seconds.-->
+			<content:encoded><![CDATA[<p>This release adds support for <a href="http://unity.ubuntu.com/projects/appindicators/">Application Indicators</a> and fixes bugs.<br />
+<span id="more-1607"></span></p>
+<h2>AppIndicator Support</h2>
+<p>This release adds support for application indicators when running Unity. Thanks to Hans Oesterholt (<a href="http://search.cpan.org/~oesterhol/">http://search.cpan.org/~oesterhol/</a>) for creating the needed Perl bindings.</p>
+<p><span style="font-size: 10px;"><strong>Hint:</strong> The indicator disappears temporarily when taking a screenshot. This is not a bug <img src="https://s.w.org/images/core/emoji/2.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></span></p>
+<div id="attachment_1610" style="width: 310px" class="wp-caption aligncenter"><a href="/wp-content/uploads/appindicator_support.png" rel="shadowbox[sbpost-1607];player=img;" title="appindicator_support"><img class="size-medium wp-image-1610" title="appindicator_support" src="/wp-content/uploads/appindicator_support-300x264.png" alt="" width="300" height="264" srcset="/wp-content/uploads/appindicator_support-300x264.png 300w, /wp-content/uploads/appindicator_support.png 446w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">AppIndicator Support</p></div>
+<h2>You are a package maintainer?</h2>
+<p>Please have a look at our <a title="Dependencies" href="/downloads/dependencies/">list of dependencies</a> to check if your current package does fulfill the needs of the new version. If you have any questions, please feel free to <a title="Contact" href="/contact/">contact</a> us. <strong>This release adds the following (optional) dependency:</strong></p>
+<ul>
+<li>libgtk2-appindicator-perl (Gtk2::AppIndicator)</li>
+</ul>
+<h2>How to install?</h2>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/" target="_blank">downloads page</a> for individual packages. Updates for other distributions will be available soon. Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #664292
+       [Feature Request: Please make use of appindicators]
+    -- LP: #1012235
+       [Advanced Selection Capture entries do not work]
+    -- LP: #1018791
+       [Change fsf-address]
+  * updated translations</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2012/08/shutter-0-89-released/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>New bugfix release 0.88.3</title>
+		<link>/2012/04/new-bugfix-release-0-88-3/</link>
+		<comments>/2012/04/new-bugfix-release-0-88-3/#respond</comments>
+		<pubDate>Sun, 22 Apr 2012 23:23:13 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[cursor]]></category>
+		<category><![CDATA[delay]]></category>
+		<category><![CDATA[dropbox]]></category>
+		<category><![CDATA[editor]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[session]]></category>
+		<category><![CDATA[shutter]]></category>
+		<category><![CDATA[upload]]></category>
+
+		<guid isPermaLink="false">/?p=1596</guid>
+		<description><![CDATA[Shutter 0.88.3 adds minor features, fixes a few bugs and updates translations.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00034499999999993 seconds-->
+<!---Displayed in 0.010818 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.88.3 adds minor features, fixes a few bugs and updates translations.</p>
+<p><span id="more-1596"></span><img title="More..." src="/wp-includes/js/tinymce/plugins/wordpress/img/trans.gif" alt="" /></p>
+<h2>New CLI-Parameters</h2>
+<p>It is now possible to configure the delay and to control whether you want to include the cursor when using Shutter in scripts.</p>
+<pre>-d, --delay=SECONDS</pre>
+<pre>-c, --include_cursor</pre>
+<pre>-C, --remove_cursor</pre>
+<h2>Bugfixes</h2>
+<p>The other changes are mainly bug fixes that make the experience even better.</p>
+<p>&nbsp;</p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #965589
+       [Dropbox upload should urlencode the resuting link]
+    -- LP: #966159
+       [Wrong image format in save dialogue]
+    -- LP: #975247
+       [Editor: icon tool fails to add image]
+    -- LP: #976316
+       [Add include/exclude cursor option for command-line]
+    -- LP: #976322
+       [Add --delay command line option]
+  * updated translations</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2012/04/new-bugfix-release-0-88-3/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Best Screen Capture Tool</title>
+		<link>/2012/03/best-screen-capture-tool-for-linux/</link>
+		<comments>/2012/03/best-screen-capture-tool-for-linux/#comments</comments>
+		<pubDate>Sun, 04 Mar 2012 17:43:52 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[award]]></category>
+		<category><![CDATA[lifehacker]]></category>
+		<category><![CDATA[shutter]]></category>
+		<category><![CDATA[software]]></category>
+
+		<guid isPermaLink="false">/?p=1588</guid>
+		<description><![CDATA[Shutter was voted "The Best Screen Capture Tool for Linux".]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00035200000000002 seconds-->
+<!---Displayed in 0.011377 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter was voted &#8220;The Best Screen Capture Tool for Linux&#8221; in <a href="http://lifehacker.com/5889994/the-best-screen-capture-tool-for-linux" target="_blank">Lifehacker&#8217;s App Directory</a>. Thanks!</p>
+<p>&nbsp;</p>
+<p><a href="/wp-content/uploads/lifehacker_screenshot.png" rel="shadowbox[sbpost-1588];player=img;" title="Lifehacker's App Directory"><img class="aligncenter size-medium wp-image-1589" title="Lifehacker's App Directory" src="/wp-content/uploads/lifehacker_screenshot-280x300.png" alt="" width="280" height="300" srcset="/wp-content/uploads/lifehacker_screenshot-280x300.png 280w, /wp-content/uploads/lifehacker_screenshot.png 658w" sizes="(max-width: 280px) 100vw, 280px" /></a></p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2012/03/best-screen-capture-tool-for-linux/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>New bugfix release 0.88.2</title>
+		<link>/2012/02/new-bugfix-release-0-88-2/</link>
+		<comments>/2012/02/new-bugfix-release-0-88-2/#respond</comments>
+		<pubDate>Wed, 15 Feb 2012 14:19:31 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[crash]]></category>
+		<category><![CDATA[editor]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[ftp]]></category>
+		<category><![CDATA[jpeg]]></category>
+		<category><![CDATA[jpg]]></category>
+		<category><![CDATA[session]]></category>
+		<category><![CDATA[shutter]]></category>
+		<category><![CDATA[upload]]></category>
+
+		<guid isPermaLink="false">/?p=1576</guid>
+		<description><![CDATA[Shutter 0.88.2 adds minor features, fixes some annoying bugs and updates translations.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00033099999999997 seconds-->
+<!---Displayed in 0.010896 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.88.2 adds minor features, fixes some annoying bugs and updates translations.</p>
+<p><span id="more-1576"></span><img title="More..." src="/wp-includes/js/tinymce/plugins/wordpress/img/trans.gif" alt="" /></p>
+<h2>New CLI-Parameter</h2>
+<p>It is now possible to prevent Shutter from adding new screenshots to the internal session which is useful when using Shutter in scripts. You have to use the new parameter -n (&#8211;no_session). Here is an example:</p>
+<pre>shutter --window=<wbr>.*firefox.<wbr>* -e -n -o %Y-%m-%d-%T.png</wbr></wbr></pre>
+<h2>Improved Usability</h2>
+<p>You can now access Copy, Cut, Paste and Delete via right-click when using Shutter&#8217;s internal image editor.</p>
+<p><a href="/wp-content/uploads/right-click.png" rel="shadowbox[sbpost-1576];player=img;" title="Internal Editor"><img class="aligncenter size-medium wp-image-1580" title="Internal Editor" src="/wp-content/uploads/right-click-300x203.png" alt="" width="300" height="203" srcset="/wp-content/uploads/right-click-300x203.png 300w, /wp-content/uploads/right-click-1024x694.png 1024w, /wp-content/uploads/right-click.png 1102w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h2>Bugfixes</h2>
+<p>The other changes are mainly bug fixes that make the experience even better. As an example, uploading via FTP is now working again.</p>
+<p>&nbsp;</p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #625291
+       [Edit menu items should be shown in right-click popup for object]
+    -- LP: #812182
+       [save image to jpg extension]
+    -- LP: #903305
+       [Add no_session parameter]
+    -- LP: #909195
+       ['Updating plugins' dialogue appears on every startup]
+    -- LP: #917158
+       [FTP upload plugin recently stopped working]
+  * updated translations</pre>
+<pre><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px; white-space: normal;"> </span></pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2012/02/new-bugfix-release-0-88-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>New bugfix release 0.88.1</title>
+		<link>/2011/12/new-bugfix-release-0-88-1/</link>
+		<comments>/2011/12/new-bugfix-release-0-88-1/#comments</comments>
+		<pubDate>Sat, 03 Dec 2011 01:51:12 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfixes]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[crash]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[shutter]]></category>
+		<category><![CDATA[upload]]></category>
+
+		<guid isPermaLink="false">/?p=1564</guid>
+		<description><![CDATA[Shutter 0.88.1 does not add any new features but fixes some annoying bugs.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.0003470000000001 seconds-->
+<!---Displayed in 0.025311 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter 0.88.1 does not add any new features but fixes some annoying bugs.</p>
+<p><span id="more-1564"></span><img title="More..." src="/wp-includes/js/tinymce/plugins/wordpress/img/trans.gif" alt="" /></p>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/">downloads</a> page for individual packages. Updates for other distributions will be available soon.</p>
+<p>Changelog:</p>
+<pre>  * Fixed bugs / minor improvements
+    -- LP: #894416
+       [Some upload plugins fail with unicode characters in filename]
+    -- LP: #894577
+       [Minus service doesn't work]
+  * updated translations</pre>
+<pre><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px; white-space: normal;"> </span></pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2011/12/new-bugfix-release-0-88-1/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Shutter 0.88 released</title>
+		<link>/2011/11/shutter-0-88-released/</link>
+		<comments>/2011/11/shutter-0-88-released/#comments</comments>
+		<pubDate>Thu, 24 Nov 2011 12:36:42 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[bugfix]]></category>
+		<category><![CDATA[bugs]]></category>
+		<category><![CDATA[dropbox]]></category>
+		<category><![CDATA[fixes]]></category>
+		<category><![CDATA[imageshack]]></category>
+		<category><![CDATA[imgur]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[twitpic]]></category>
+		<category><![CDATA[ubuntu-pics]]></category>
+		<category><![CDATA[upload]]></category>
+		<category><![CDATA[uploading]]></category>
+
+		<guid isPermaLink="false">/?p=1538</guid>
+		<description><![CDATA[This release improves Shutter's upload mechanism, adds new features and fixes bugs.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00037600000000004 seconds-->
+<!---Displayed in 0.010683 seconds.-->
+			<content:encoded><![CDATA[<p>This release improves Shutter&#8217;s upload mechanism, adds new features and fixes bugs.<br />
+<span id="more-1538"></span></p>
+<h2>Improved Uploading</h2>
+<p>Due to the rewrite of major parts of the code it was never easier to write an upload plugin for Shutter. Hence we added a bunch of new image hosting services.</p>
+<div id="attachment_1544" style="width: 292px" class="wp-caption aligncenter"><a href="/wp-content/uploads/shutter_088_preferences.png" rel="shadowbox[sbpost-1538];player=img;" title="shutter_088_preferences"><img class="size-medium wp-image-1544" title="shutter_088_preferences" src="/wp-content/uploads/shutter_088_preferences-282x300.png" alt="List of new upload plugins" width="282" height="300" srcset="/wp-content/uploads/shutter_088_preferences-282x300.png 282w, /wp-content/uploads/shutter_088_preferences.png 681w" sizes="(max-width: 282px) 100vw, 282px" /></a><p class="wp-caption-text">New upload plugins</p></div>
+<p>Shutter does also remember the latest uploads now. See how all this works:</p>
+<p><center><br />
+<iframe src="http://player.vimeo.com/video/32618273" frameborder="0" width="400" height="230"></iframe><br />
+<a href="http://vimeo.com/32618273">Improved Uploading</a> from <a href="http://vimeo.com/shutterproject">Mario Kemper</a> on <a href="http://vimeo.com">Vimeo</a>.</center>&nbsp;</p>
+<h2>Improved CLI-Interface</h2>
+<p>Is is now possible to specify the filename when using Shutter via command line. Here is an excerpt from Shutter&#8217;s manual page:</p>
+<pre>-o, --output=FILENAME
+   Specify a filename to save the screenshot to (overwrites any profile-related
+   setting).
+
+   Supported image formats: You can save to any popular image format (e.g. jpeg, png,
+   gif, bmp). Additionally it is possible to save to pdf, ps or svg.
+
+   Please note: There are several wildcards available, like
+
+	%Y = year
+	%m = month
+	%d = day
+	%T = time
+	$w = width
+	$h = height
+	$name = multi-purpose (e.g. window title)
+	$nb_name = like $name but without blanks in resulting strings
+	$profile = name of current profile
+	$R = random char (e.g. $RRRR = ag4r)
+	%NN = counter
+
+   The string is interpretted by strftime. See "man strftime" for more examples.
+
+   As an example: shutter -f -e -o './%y-%m-%d_$w_$h.png' would create a file named
+   '11-10-28_1280_800.png' in the current directory.</pre>
+<pre></pre>
+<p>Particularly interesting is the possibility to export directly to PDF without any further processing.</p>
+<h2>Want to develop an upload plugin?</h2>
+<p>All you need is a) some knowledge of <a href="http://en.wikipedia.org/wiki/Perl" target="_blank">Perl</a> b) this <a title="Developers" href="/contribute/developers/">template</a>!</p>
+<h2>You are a package maintainer?</h2>
+<p>Shutter used to ship some Perl modules within the release tarball. We removed those custom modules because of security reasons. Please have a look at our <a title="Dependencies" href="/downloads/dependencies/">list of dependencies</a> to check if your current package does fulfill the needs of the new version. If you have any questions, please feel free to <a title="Contact" href="/contact/">contact</a> us.</p>
+<h2>How to install?</h2>
+<p>If you&#8217;ve subscribed to the Ubuntu repository, you&#8217;ll be prompted about an update being available automatically &#8211; otherwise, check the <a title="Downloads" href="/downloads/" target="_blank">downloads page</a> for individual packages. Updates for other distributions will be available soon. Changelog:</p>
+<pre>  * New Features
+    -- Refactored the uploading code (added support for plugins)
+    -- Added new upload plugins
+    -- Public links are now saved when a screenshot was uploaded
+    -- New command line option: specify filename
+  * New Upload Plugins
+    -- Dropbox
+    -- ImageBanana
+    -- ImageShack
+    -- Imgur
+    -- ImmIO
+    -- ITmages
+    -- Minus
+    -- Omploader
+    -- ToileLibre
+    -- TwitPic
+    -- UbuntuPics
+  * Fixed bugs / minor improvements
+    -- LP: #342622
+       [Remember upload links]
+    -- LP: #841328
+       [black corners if window is selected from the window list]
+    -- LP: #888441
+       [dialog not clickable when renaming a file]
+    -- LP: #889031
+       [Package should'nt provide own perl libraries]
+    -- LP: #892703
+       [After unlinking from Dropbox there is no way to relink it again]
+    -- LP: #650701
+       [retrieve Public URL if screenshot is already uploaded]
+    -- LP: #675911
+       [Url not selected when i do single click]
+    -- LP: #793462
+       [Short URL in imageshack.us]
+    -- LP: #870556
+       [specify file name on command line]
+    -- LP: #374024
+       [http://omploader.org/ as new image hoster]
+    -- LP: #486490
+       [Feature Request: Upload to imgur]
+    -- LP: #489598
+       [Wish: Add Twitpic support]
+    -- LP: #598818
+       [feature request: extensible imagehost/upload tools]
+    -- LP: #602209
+       [Add integration with Dropbox]
+    -- LP: #619748
+       [Add ubuntuusers.de thumbnail code to any of the hosting plugins]
+    -- LP: #651029
+       [Feature Request: Upload to ITmages]
+    -- LP: #703299
+       [Add upload to http://pix.toile-libre.org/]
+    -- LP: #785032
+       [min.us uploading support]
+    -- LP: #793463
+       [More image services to upload]
+  * improved support for Gnome-Shell
+  * several smaller bugfixes
+  * updated translations</pre>
+<p>Enjoy this release!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2011/11/shutter-0-88-released/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Best Linux Software</title>
+		<link>/2011/09/best-linux-software/</link>
+		<comments>/2011/09/best-linux-software/#comments</comments>
+		<pubDate>Tue, 06 Sep 2011 10:58:17 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[award]]></category>
+		<category><![CDATA[makeuseof]]></category>
+		<category><![CDATA[shutter]]></category>
+		<category><![CDATA[software]]></category>
+
+		<guid isPermaLink="false">/?p=1513</guid>
+		<description><![CDATA[<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00033400000000006 seconds-->
+<!---Displayed in 0.010673 seconds.-->
+Shutter was selected by MakeUseOf as one of the best applications running on Linux. Thank you very much! &#160;]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00034299999999998 seconds-->
+<!---Displayed in 0.010578 seconds.-->
+			<content:encoded><![CDATA[<p>Shutter was selected by MakeUseOf as <a href="http://www.makeuseof.com/pages/best-linux-software" target="_blank">one of the best applications</a> running on Linux. Thank you very much!</p>
+<p>&nbsp;</p>
+<p><img class="aligncenter" title="Best Linux Software" src="http://www.makeuseof.com/wp-content/uploads/2011/06/linux.jpg" alt="" width="300" height="300" /></p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2011/09/best-linux-software/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Shutter @UDS Oneiric</title>
+		<link>/2011/05/shutter-uds-oneiric/</link>
+		<comments>/2011/05/shutter-uds-oneiric/#respond</comments>
+		<pubDate>Sun, 08 May 2011 19:15:57 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[budapest]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[summit]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[ubuntu developer summit]]></category>
+		<category><![CDATA[uds]]></category>
+
+		<guid isPermaLink="false">/?p=1449</guid>
+		<description><![CDATA[The next Ubuntu Developer Summit (UDS) is taking place in Budapest, Hungary. Happily, my sponsorship request was accepted by Canonical (thanks to the one who decided that!!), so I am already sitting in the hotel's lobby right now.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00033499999999997 seconds-->
+<!---Displayed in 0.010454 seconds.-->
+			<content:encoded><![CDATA[<p>The next Ubuntu Developer Summit (UDS) is taking place in Budapest, Hungary. Happily, my sponsorship request was accepted by Canonical (thanks to the one who decided that!!), so I am already sitting in the <a href="http://www.corinthia.com/en/Budapest/home/" target="_blank">hotel&#8217;s</a> lobby right now. I am really excited about all sessions coming up next week (tomorrow morning).</p>
+<p>If anyone wants to have chat about Shutter or any other topic you are interested in, please let me know.</p>
+<p><strong>[Update]: </strong></p>
+<p>The summit is over and I am back home again.</p>
+<div id="attachment_1456" style="width: 160px" class="wp-caption aligncenter"><a href="/wp-content/uploads/uds-o-badge.png" rel="shadowbox[sbpost-1449];player=img;" title="uds-o-badge"><img class="size-thumbnail wp-image-1456" title="uds-o-badge" src="/wp-content/uploads/uds-o-badge-150x150.png" alt="uds-o-badge" width="150" height="150" srcset="/wp-content/uploads/uds-o-badge-150x150.png 150w, /wp-content/uploads/uds-o-badge-48x48.png 48w, /wp-content/uploads/uds-o-badge-184x184.png 184w" sizes="(max-width: 150px) 100vw, 150px" /></a><p class="wp-caption-text">My badge</p></div>
+<p>For those who are curious, here are some nice photos: <a href="http://www.flickr.com/groups/uds/">http://www.flickr.com/groups/uds/</a></p>
+<p>I hope that I can be there again at the next UDS. See you soon.</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2011/05/shutter-uds-oneiric/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>New openSUSE packages</title>
+		<link>/2010/07/new-opensuse-packages/</link>
+		<comments>/2010/07/new-opensuse-packages/#respond</comments>
+		<pubDate>Sun, 18 Jul 2010 11:21:01 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[opensuse]]></category>
+		<category><![CDATA[packages]]></category>
+		<category><![CDATA[rpm]]></category>
+		<category><![CDATA[suse]]></category>
+
+		<guid isPermaLink="false">/?p=1057</guid>
+		<description><![CDATA[Good news for all openSUSE users. Finally there are some packages that work with 11.2 and 11.3. If you have any problems, don't hesitate to contact us.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00032699999999997 seconds-->
+<!---Displayed in 0.010585 seconds.-->
+			<content:encoded><![CDATA[<p>Good news for all openSUSE users. Finally there are some packages that work with 11.2 and 11.3 (thanks to swyear): <a href="https://build.opensuse.org/package/show?package=shutter&amp;project=home%3Aswyear" target="_blank">https://build.opensuse.org/package/show?package=shutter&amp;project=home%3Aswyear</a></p>
+<p>For more information about openSUSE&#8217;s Build Service see <a href="http://en.opensuse.org/openSUSE:Build_Service_Enduser_Info" target="_blank">http://en.opensuse.org/openSUSE:Build_Service_Enduser_Info</a>.</p>
+<p>If you have any problems, don&#8217;t hesitate to contact us.</p>
+<p>Have fun!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2010/07/new-opensuse-packages/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How to reanimate disabled features</title>
+		<link>/2010/05/how-to-reanimate-disabled-features/</link>
+		<comments>/2010/05/how-to-reanimate-disabled-features/#comments</comments>
+		<pubDate>Tue, 25 May 2010 12:48:16 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[disabled]]></category>
+		<category><![CDATA[edit]]></category>
+		<category><![CDATA[greyed out]]></category>
+
+		<guid isPermaLink="false">/?p=1038</guid>
+		<description><![CDATA[If you are using the latest Ubuntu (or any other debian-based distribution) you will notice that some features of Shutter are disabled by default. These packages are optional dependencies (this means that Shutter is able to start but with restricted functionality) and will be suggested to you when you install the Shutter package.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00032999999999994 seconds-->
+<!---Displayed in 0.010487 seconds.-->
+			<content:encoded><![CDATA[<p>If you are using the latest Ubuntu (or any other debian-based distribution) you will notice that some features of Shutter are disabled by default.</p>
+<p><a href="/wp-content/uploads/features_disabled.png" rel="shadowbox[sbpost-1038];player=img;" title="Disabled features"><img class="aligncenter size-thumbnail wp-image-1040" title="Disabled features" src="/wp-content/uploads/features_disabled-150x150.png" alt="" width="150" height="150" /></a></p>
+<p>You need to install two additional packages to enable these features again:</p>
+<ol>
+<li>Quit any running instance of Shutter</li>
+<li>sudo apt-get install libgoo-canvas-perl gnome-web-photo</li>
+<li>Launch Shutter</li>
+</ol>
+<p><em>Why are those features disabled by default?</em></p>
+<p>These packages are optional dependencies (this means that Shutter is able to start but with restricted functionality) and will be suggested to you when you install the Shutter package but the different tools like apt-get, aptitude, synaptic etc. handle suggested packages differently &#8211; at least apt-get does not install them automatically.</p>
+<p>There are already some <a href="https://bugs.launchpad.net/ubuntu/+source/shutter/+bugs" target="_blank">bug reports</a> that are related to this issue but please note: <strong>This is not a bug in Shutter </strong>&#8211; it is just the way the official packages are build. Please use our <a href="/faq-help/ppa-installation-guide/" target="_blank">PPA</a> if you don&#8217;t want to install the packages manually.</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2010/05/how-to-reanimate-disabled-features/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Like Shutter as a better alternative? Help us out!</title>
+		<link>/2009/11/like-shutter-as-a-better-alternative-help-us-out/</link>
+		<comments>/2009/11/like-shutter-as-a-better-alternative-help-us-out/#comments</comments>
+		<pubDate>Mon, 02 Nov 2009 21:55:14 +0000</pubDate>
+		<dc:creator><![CDATA[Vadim]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">/?p=881</guid>
+		<description><![CDATA[AlternativeTo is a useful website covering Windows, Mac, Linux and Online applications for the reasons of, well, finding alternatives!
+As Shutter has been touted as an apparent alternative to many Windows solutions (even though that's not the original intent), it would be great if you people could add your support behind it by "liking" on its webpage.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00033000000000005 seconds-->
+<!---Displayed in 0.011291 seconds.-->
+			<content:encoded><![CDATA[<p><a href="http://alternativeto.net/">AlternativeTo</a> is a useful website covering Windows, Mac, Linux and Online applications for the reasons of, well, finding alternatives!</p>
+<p>As Shutter has been touted as an apparent alternative to many Windows solutions (even though that&#8217;s not the original intent), it would be great if you people could add your support behind it by &#8220;liking&#8221; on <a href="http://alternativeto.net/desktop/shutter/">its webpage</a>. The website supports OpenID login, so registration isn&#8217;t a problem!</p>
+<p style="text-align: center;"><a href="http://alternativeto.net/desktop/shutter/"><br />
+<img class="aligncenter size-medium wp-image-883" title="Shutter on AlternativeTo" src="/wp-content/uploads/screenshot_0381-300x91.png" alt="Shutter on AlternativeTo" width="300" height="91" srcset="/wp-content/uploads/screenshot_0381-300x91.png 300w, /wp-content/uploads/screenshot_0381-1024x312.png 1024w, /wp-content/uploads/screenshot_0381.png 1061w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="http://alternativeto.net/desktop/shutter/">http://alternativeto.net/desktop/shutter/</a></p>
+<p>Thanks again <img src="https://s.w.org/images/core/emoji/2.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2009/11/like-shutter-as-a-better-alternative-help-us-out/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Shutter is Ubuntu Koala ready!</title>
+		<link>/2009/10/shutter-is-ubuntu-koala-ready/</link>
+		<comments>/2009/10/shutter-is-ubuntu-koala-ready/#respond</comments>
+		<pubDate>Wed, 28 Oct 2009 00:19:53 +0000</pubDate>
+		<dc:creator><![CDATA[Vadim]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">/?p=871</guid>
+		<description><![CDATA[<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00032600000000005 seconds-->
+<!---Displayed in -0.98879 seconds.-->
+The Ubuntu 9.10 &#8220;Karmic Koala&#8221; is rapidly approaching and due to be released in two days &#8211; on October 29, 2009. Your favorite screenshot program is already prepared for it &#8211; Shutter is available in our PPA for the Ubuntu Koala, and works great on it. Enjoy!]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.000322 seconds-->
+<!---Displayed in 0.01118 seconds.-->
+			<content:encoded><![CDATA[<p>The <a href="http://www.ubuntu.com/">Ubuntu 9.10</a> &#8220;Karmic Koala&#8221; is rapidly approaching and due to be released in two days &#8211; on October 29, 2009.</p>
+<p>Your favorite screenshot program is already prepared for it &#8211; Shutter is available in <a href="/faq-help/ppa-installation-guide/">our PPA</a> for the Ubuntu Koala, and works great on it.</p>
+<p>Enjoy!</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2009/10/shutter-is-ubuntu-koala-ready/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Shutter 0.80.1 out, with an improved editor and bugfixes</title>
+		<link>/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/</link>
+		<comments>/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/#comments</comments>
+		<pubDate>Thu, 06 Aug 2009 22:21:22 +0000</pubDate>
+		<dc:creator><![CDATA[Romario]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[release]]></category>
+		<category><![CDATA[0.80.1]]></category>
+		<category><![CDATA[cursors]]></category>
+		<category><![CDATA[icons]]></category>
+		<category><![CDATA[images]]></category>
+		<category><![CDATA[tango]]></category>
+
+		<guid isPermaLink="false">/?p=830</guid>
+		<description><![CDATA[Shutter 0.80.1 is a bugfix release concentrating on 8 annoyances reported by our users, but there are some interesting improvements as well.]]></description>
+	<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.000327 seconds-->
+<!---Displayed in 0.010766 seconds.-->
+			<content:encoded><![CDATA[<p><a href="/about/">Shutter</a> 0.80.1 is a bugfix release concentrating on 8 annoyances reported by our users, but there are some interesting improvements as well.</p>
+<p>If you’ve added the Shutter <a href="../faq-help/ppa-installation-guide/">Ubuntu repository</a>, you’ll be notified about an update automatically – otherwise, see our <a href="/downloads/">downloads page</a>.</p>
+<p><span id="more-830"></span></p>
+<h2>New icons and cursors in the editor</h2>
+<p>In order to improve the usability and to help you creating more precise drawings we added a set of new cursors (inpired / borrowed from the <a href="http://inkscape.org">inkscape project</a>). Additionally we changed some of the old tool-icons to achieve a much more professional look.</p>
+<p><a href="/wp-content/uploads/cursor2.png" rel="shadowbox[sbpost-830];player=img;" title="New 'rectangle' cursor"><img class="aligncenter size-thumbnail wp-image-833" title="New 'rectangle' cursor" src="/wp-content/uploads/cursor2-150x150.png" alt="New 'rectangle' cursor" width="150" height="150" /></a></p>
+<p><a href="/wp-content/uploads/cursor2.png" rel="shadowbox[sbpost-830];player=img;"></a><a href="/wp-content/uploads/cursor1.png" rel="shadowbox[sbpost-830];player=img;" title="New 'freehand' cursor"><img class="aligncenter size-thumbnail wp-image-832" title="New 'freehand' cursor" src="/wp-content/uploads/cursor1-150x150.png" alt="New 'freehand' cursor" width="150" height="150" /></a></p>
+<h2>Insert cursors, hundreds of tango graphics and explore your current icon theme</h2>
+<p>If you are using icons and images to highlight parts of your screenshots as much as I do you&#8217;ll like the following changes.</p>
+<p>It is now possible to import all possible <a href="http://tango.freedesktop.org/Tango_Desktop_Project">tango icons</a> (separated by categories), cursors and even icons of your current icon theme.</p>
+<p><a href="/wp-content/uploads/insert_tango_theme.png" rel="shadowbox[sbpost-830];player=img;" title="Insert tango icons"><img class="aligncenter size-thumbnail wp-image-837" title="Insert tango icons" src="/wp-content/uploads/insert_tango_theme-150x150.png" alt="Insert tango icons" width="150" height="150" /></a></p>
+<p><a href="/wp-content/uploads/insert-cursors.png" rel="shadowbox[sbpost-830];player=img;" title="Insert cursors"><img class="aligncenter size-thumbnail wp-image-836" title="Insert cursors" src="/wp-content/uploads/insert-cursors-150x150.png" alt="Insert cursors" width="150" height="150" /></a></p>
+<p>We hope you enjoy this release!</p>
+<p>Detailed changelog is <a href="https://launchpad.net/shutter/+milestone/0.80.1">available here</a>.</p>
+<p><a href="http://bittip.it/" class="bittip-button" default-amount="" request="count" url="" donation-message="" donation-address="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></a></p><script>(function() {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;var url; if (window.location.protocol == 'https:'){url = 'https://bitcoinsberlin.com/wp-content/uploads/2013/01/button-loader.js'} else { url = 'http://bittip.it/cdn/button-loader.js';};s.src = url;t.parentNode.insertBefore(s, t);})();</script>]]></content:encoded>
+			<wfw:commentRss>/2009/08/shutter-0-80-1-out-with-an-improved-editor-and-bugfixes/feed/</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+	</channel>
+</rss>

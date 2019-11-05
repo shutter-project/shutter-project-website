@@ -1,0 +1,970 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Man Page | Shutter - Feature-rich Screenshot Tool</title>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="/wp-content/themes/TheProfessional/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Shutter &#8211; Feature-rich Screenshot Tool RSS Feed" href="/feed/" />
+<link rel="alternate" type="application/atom+xml" title="Shutter &#8211; Feature-rich Screenshot Tool Atom Feed" href="/feed/atom/" />
+<link rel="pingback" href="/xmlrpc.php" />
+
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/TheProfessional/css/ie6style.css" />
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">DD_belatedPNG.fix('img#logo, ul.nav li.backLava, ul.nav li.backLava div.leftLava, #menu, #search-form, #featured, div.slide div.overlay, a#left-arrow, a#right-arrow, div.description, a.readmore, a.readmore span, ul.nav ul li a, #content-bottom, div.service img.service-icon, #controllers, #controllers-top, #controllers-main, #controllers a span.tooltip span.left-arrow, span.overlay, div.hr, #content-top, div.top-alt, div.bottom-alt, #content-bottom, #breadcrumbs span.sep');</script>
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/TheProfessional/css/ie7style.css" />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/TheProfessional/css/ie8style.css" />
+<![endif]-->
+
+<script type="text/javascript">
+	document.documentElement.className = 'js';
+</script>
+
+
+<!-- All in One SEO Pack 2.3.14.2 by Michael Torbert of Semper Fi Web Design[293,351] -->
+<meta name="description"  content="Version 0.90: Version 0.88 and 0.89: Version 0.87.x:" />
+
+<link rel="canonical" href="/faq-help/man-page/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Shutter - Feature-rich Screenshot Tool &raquo; Man Page Comments Feed" href="/faq-help/man-page/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.1"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<meta content="TheProfessional v.1.1" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='btcp-style-css'  href='/wp-content/plugins/bitcoin-payments/style.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='social-widget-css'  href='/wp-content/plugins/social-media-widget/social_widget.css?ver=4.8.1' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/bitcoin-payments/javascript/jquery.qrcode.min.js?ver=4.8.1'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.1" />
+<link rel='shortlink' href='/?p=96' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fshutter-project.org%2Ffaq-help%2Fman-page%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fshutter-project.org%2Ffaq-help%2Fman-page%2F&#038;format=xml" />
+<meta name="bitcoin" content="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2" />
+<link rel="bitcoin" href="bitcoin:37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2" />
+
+	<link rel="search" type="application/opensearchdescription+xml" href="/wp-content/plugins/open-search/open-search-xml.php" title="Shutter &#8211; Feature-rich Screenshot Tool : Search in posts" />
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */
+</script>
+
+<link href="https://plus.google.com/103066453717145238737/" rel="publisher" />
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+            <span class="logolink">
+                <a href="">
+                    <img src="/wp-content/themes/TheProfessional/images/logo.png" alt="Shutter Logo" id="logo"/>
+                </a>
+             </span>
+			<div id="menu">
+									<ul class="nav">
+												
+						<li class="page_item page-item-2 page_item_has_children"><a href="/about/">About</a>
+<ul class='children'>
+	<li class="page_item page-item-866"><a href="/about/about-the-team/">The Team</a></li>
+	<li class="page_item page-item-358"><a href="/about/in-the-news/">In the News</a></li>
+</ul>
+</li>
+<li class="page_item page-item-17 page_item_has_children"><a href="/downloads/">Downloads</a>
+<ul class='children'>
+	<li class="page_item page-item-1158"><a href="/downloads/third-party-packages/">Third Party Packages</a></li>
+	<li class="page_item page-item-1160"><a href="/downloads/source-code/">Source Code</a></li>
+	<li class="page_item page-item-1162"><a href="/downloads/dependencies/">Dependencies</a></li>
+</ul>
+</li>
+<li class="page_item page-item-237 page_item_has_children current_page_ancestor current_page_parent"><a href="/faq-help/">FAQ &#038; Help</a>
+<ul class='children'>
+	<li class="page_item page-item-243"><a href="/faq-help/ppa-installation-guide/">PPA-Installation Guide</a></li>
+	<li class="page_item page-item-476"><a href="/faq-help/set-shutter-as-the-default-screenshot-tool/">Shutter as default</a></li>
+	<li class="page_item page-item-516"><a href="/faq-help/upload-to-flickr/">Upload to Flickr</a></li>
+	<li class="page_item page-item-96 current_page_item"><a href="/faq-help/man-page/">Man Page</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1194 page_item_has_children"><a href="/preview/">Preview</a>
+<ul class='children'>
+	<li class="page_item page-item-24 page_item_has_children"><a href="/preview/screenshots/">Screenshots</a>
+	<ul class='children'>
+		<li class="page_item page-item-619"><a href="/preview/screenshots/main-window/">Main window</a></li>
+		<li class="page_item page-item-599"><a href="/preview/screenshots/preferences/">Preferences</a></li>
+		<li class="page_item page-item-633"><a href="/preview/screenshots/taking-a-screenshot/">Taking a screenshot</a></li>
+		<li class="page_item page-item-661"><a href="/preview/screenshots/drawingtool/">DrawingTool</a></li>
+		<li class="page_item page-item-654"><a href="/preview/screenshots/upload/">Upload</a></li>
+		<li class="page_item page-item-681"><a href="/preview/screenshots/plugins/">Plugins</a></li>
+		<li class="page_item page-item-705"><a href="/preview/screenshots/multilanguage/">Multilanguage</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-157"><a href="/preview/screencasts/">Screencasts</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1192 page_item_has_children"><a href="/contribute/">Contribute</a>
+<ul class='children'>
+	<li class="page_item page-item-1531"><a href="/contribute/developers/">Developers</a></li>
+</ul>
+</li>
+<li class="page_item page-item-370"><a href="/contact/">Contact</a></li>
+							<li class="cat-item cat-item-112"><a href="/category/blog/" >Blog</a>
+</li>
+					
+					</ul> <!-- end ul.nav -->
+								
+								
+				<div id="search-form">
+					<form method="get" id="searchform" action="">
+						<input type="text" value="search this site..." name="s" id="searchinput" />
+
+						<input type="image" src="/wp-content/themes/TheProfessional/images/search_btn.png" id="searchsubmit" />
+					</form>
+				</div> <!-- end #search-form -->
+			</div> <!-- end #menu -->		
+		</div> <!-- end #header -->
+		
+				
+	
+	<div id="content-top" class="top-alt"></div>
+	<div id="content" class="clearfix content-alt">
+		<div id="content-area">
+			<div id="breadcrumbs">
+		
+					<a href="">Home</a> <span class="sep"></span>
+				
+									  Man Page					
+</div> <!-- end #breadcrumbs -->
+											
+			<div class="entry clearfix post">
+				<h1 class="title">Man Page</h1>
+				
+								
+				<!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00035499999999999 seconds-->
+<!---Displayed in 0.011511 seconds.-->
+<h1>Version 0.90:</h1>
+<p><iframe name="man page" src="/wp-content/custom_html_files/shutter_090.pod.html" height="500" width="100%" scrolling="yes"></iframe><br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;</p>
+<h1>Version 0.88 and 0.89:</h1>
+<p><iframe name="man page" src="/wp-content/custom_html_files/shutter_088.pod.html" height="500" width="100%" scrolling="yes"></iframe><br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;</p>
+<h1>Version 0.87.x:</h1>
+<p><iframe name="man page" src="/wp-content/custom_html_files/shutter.pod.html" height="500" width="100%" scrolling="yes"></iframe></p>
+								
+
+<br />
+<br />
+
+<br />
+				
+			</div> <!-- end .entry -->
+                
+            			
+			<!-- You can start editing here. -->
+
+<div id="comment-wrap">
+
+	
+			<h3 id="comments">45 Comments</h3>
+		
+			<ol class="commentlist clearfix">
+			   <li class="comment even thread-even depth-1" id="li-comment-135173">
+   <div id="comment-135173" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7de25421c7bb79d120daa34557eb3cae?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7de25421c7bb79d120daa34557eb3cae?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Kevin</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-135173">November 16, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Regarding the FTP upload feature&#8230;<br />
+Is there a parameter expansion or something similar so I can have shutter tell me the url of what was just uploaded so I can quickly paste it to my recipient, something like the below where the %s would be expanded to the filename of the captured image?</p>
+<p>URI   [    ]<br />
+connection mode   [    ]<br />
+username   [    ]<br />
+password   [    ]<br />
+website url   [ <a href="http://my.ftp.com/public_images/%s" rel="nofollow">http://my.ftp.com/public_images/%s</a>   ]</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=135173#respond' onclick='return addComment.moveForm( "comment-135173", "135173", "respond", "96" )' aria-label='Reply to Kevin'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-84070">
+   <div id="comment-84070" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://0.gravatar.com/avatar/00da8818c6e6ca2418569d980674fbfb?s=57&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/00da8818c6e6ca2418569d980674fbfb?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://lightonphiri.org' rel='external nofollow' class='url'>Phiri</a></span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-84070">September 25, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Pretty neat software. I cannot seem to figure out how to take a screenshot of a website that requires authentication though&#8230; any hints on how to go about doing that? I just get the login window, but what I need is what comes after login in.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=84070#respond' onclick='return addComment.moveForm( "comment-84070", "84070", "respond", "96" )' aria-label='Reply to Phiri'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-84100">
+   <div id="comment-84100" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-84100">September 25, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Unfortunately this is not possible yet.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=84100#respond' onclick='return addComment.moveForm( "comment-84100", "84100", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment odd alt depth-3" id="li-comment-84101">
+   <div id="comment-84101" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://0.gravatar.com/avatar/00da8818c6e6ca2418569d980674fbfb?s=57&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/00da8818c6e6ca2418569d980674fbfb?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://lightonphiri.org' rel='external nofollow' class='url'>Phiri</a></span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-84101">September 25, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>I see, thank you very much. Another question, is there a way of handling POST requests? There are a couple of web page workflows that I need to capture, however, the website uses POST requests&#8230;</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=84101#respond' onclick='return addComment.moveForm( "comment-84101", "84101", "respond", "96" )' aria-label='Reply to Phiri'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-84172">
+   <div id="comment-84172" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-84172">September 25, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Hm, not really. Maybe you should try one of the available browser plugins for taking screenshots of webpages in this case.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=84172#respond' onclick='return addComment.moveForm( "comment-84172", "84172", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment odd alt depth-3" id="li-comment-84233">
+   <div id="comment-84233" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://0.gravatar.com/avatar/00da8818c6e6ca2418569d980674fbfb?s=57&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/00da8818c6e6ca2418569d980674fbfb?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://lightonphiri.org' rel='external nofollow' class='url'>Phiri</a></span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-84233">September 25, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Thank you Romario.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=84233#respond' onclick='return addComment.moveForm( "comment-84233", "84233", "respond", "96" )' aria-label='Reply to Phiri'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-56457">
+   <div id="comment-56457" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/17fb6d03e8c80df3561cf713c5566401?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/17fb6d03e8c80df3561cf713c5566401?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Hans</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-56457">July 24, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Hi Romario..</p>
+<p>Today I decided to involve myself in a new -well sort of- web project, which depends heavily on making screenshots from websites.<br />
+I Searched and installed/trashed many applications the whole day, and for now I can honestly say that Shutter came out on top every single feature evaluation. Kudos Romario, you have really done a great job with Shutter.</p>
+<p>Hans</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=56457#respond' onclick='return addComment.moveForm( "comment-56457", "56457", "respond", "96" )' aria-label='Reply to Hans'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-58965">
+   <div id="comment-58965" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-58965">August 1, 2012</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Thank you very much! I am glad you like Shutter 🙂</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=58965#respond' onclick='return addComment.moveForm( "comment-58965", "58965", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-odd thread-alt depth-1" id="li-comment-18691">
+   <div id="comment-18691" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://2.gravatar.com/avatar/27e055a6f885b974696537e278edd26a?s=57&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27e055a6f885b974696537e278edd26a?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://www.blackfridaylcdhdtvbestprice.com' rel='external nofollow' class='url'>Tony</a></span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-18691">November 20, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>If I run it from CLI what is the option for give a name to the capture…. ejem shutter -??? capture.png</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=18691#respond' onclick='return addComment.moveForm( "comment-18691", "18691", "respond", "96" )' aria-label='Reply to Tony'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-18707">
+   <div id="comment-18707" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-18707">November 21, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Please use the latest testing version of Shutter. I have implemented<br />
+that feature some days ago.</p>
+<p>After updating you will be able to use something like:<br />
+shutter -w=skype -e -o=test.png</p>
+<p>See &#8216;man shutter&#8217; for more details.</p>
+<p>You can find the latest builds here:<br />
+<a href="https://launchpad.net/~shutter-testing-team/+archive/ppa/+packages" rel="nofollow">https://launchpad.net/~shutter-testing-team/+archive/ppa/+packages</a></p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=18707#respond' onclick='return addComment.moveForm( "comment-18707", "18707", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-14093">
+   <div id="comment-14093" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://2.gravatar.com/avatar/2f3ac9cc5b887869d8efdb34ed18a65c?s=57&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2f3ac9cc5b887869d8efdb34ed18a65c?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Ralf</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-14093">July 1, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>I moved from Fedora 14 to Fedora 15 with Gnome3. With Gnome3 I cannot take any screenshots anymore. With Gnome3 the key to execute the shooting of the selection is not working.<br />
+The only way to escape from shutter is to switch to a console and kill the shutter process.</p>
+<p>I even reassigned the shortcut to F12, but that did not improve the situation.</p>
+<p>Nevertheless, although I am not able to use shutter right now, I really like the tool. I was a great helper with Gnome2 and I think, it will also be again with Gnome3.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=14093#respond' onclick='return addComment.moveForm( "comment-14093", "14093", "respond", "96" )' aria-label='Reply to Ralf'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-14150">
+   <div id="comment-14150" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-14150">July 2, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Sounds like a bug in Shutter that was solved some time ago. The version in Fedora&#8217;s repositories is heavily outdated.</p>
+<p>Due to the fact that shutter is written in perl, you can also download<br />
+the sources and try to install the dependencies manually. There is no<br />
+compilation needed.<br />
+Dont&#8217; uninstall the regular Shutter package, because it installs the<br />
+majority of needed dependencies.</p>
+<p>1) Get the latest version:<br />
+<a href="/wp-content/uploads/releases/tars/" rel="nofollow">/wp-content/uploads/releases/tars/</a><br />
+2) Go to the download directory and open a terminal<br />
+3) tar xfvz shutter-0.87.2.tar.gz<br />
+4) cd shutter-0.87.2/<br />
+5) bin/shutter</p>
+<p>You will also need Gtk2::Unique<br />
+<a href="http://search.cpan.org/~potyl/Gtk2-Unique-0.05/lib/Gtk2/Unique.pm" rel="nofollow">http://search.cpan.org/~potyl/Gtk2-Unique-0.05/lib/Gtk2/Unique.pm</a></p>
+<p>Do you know how to install CPAN-packages?</p>
+<p>Btw, I have already contacted fedora&#8217;s maintainer some time ago. He<br />
+currently does not respond.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=14150#respond' onclick='return addComment.moveForm( "comment-14150", "14150", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-odd thread-alt depth-1" id="li-comment-11397">
+   <div id="comment-11397" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://2.gravatar.com/avatar/ed7f27f35511e043f84fd8ff704b79db?s=57&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed7f27f35511e043f84fd8ff704b79db?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">vincenzo</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-11397">April 27, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Great software !</p>
+<p>I am trying to use it with a command line where I would impose the name of the output file:<br />
+shutter -a mywindow.png</p>
+<p>But I always obtain the message:<br />
+ERROR: unknown command or filename mywindow.png</p>
+<p>How can I do ?<br />
+Thank you.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=11397#respond' onclick='return addComment.moveForm( "comment-11397", "11397", "respond", "96" )' aria-label='Reply to vincenzo'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-11427">
+   <div id="comment-11427" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-11427">April 29, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>It is currently not possible to specify a filename via command line. Shutter uses the value that is configured in Shutter&#8217;s preferences.<br />
+You can load a specific profile like this (not needed if you don&#8217;t use profiles):<br />
+shutter -a -p=myprofile</p>
+<p>Maybe we should add this option in a future release.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=11427#respond' onclick='return addComment.moveForm( "comment-11427", "11427", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-11260">
+   <div id="comment-11260" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://2.gravatar.com/avatar/5ea3b455ce41687486d3b0ab18e96696?s=57&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5ea3b455ce41687486d3b0ab18e96696?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn"><a href='http://www.debtandfreedom.com' rel='external nofollow' class='url'>debt advice</a></span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-11260">April 22, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>[&#8230;] Man Page (version 0.87 and higher) | Shutter &#8211; Feature-rich Screenshot Tool [&#8230;]</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=11260#respond' onclick='return addComment.moveForm( "comment-11260", "11260", "respond", "96" )' aria-label='Reply to debt advice'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11045">
+   <div id="comment-11045" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/a6da35c12fd573adf1a08df9e32f26b8?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a6da35c12fd573adf1a08df9e32f26b8?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">will</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-11045">April 13, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>If I run it from CLI what is the option for give a name to the capture&#8230;. ejem shutter -??? capture.png</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=11045#respond' onclick='return addComment.moveForm( "comment-11045", "11045", "respond", "96" )' aria-label='Reply to will'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-11428">
+   <div id="comment-11428" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-11428">April 29, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>It is currently not possible to specify a filename via command line. Shutter uses the value that is configured in Shutter’s preferences.<br />
+You can load a specific profile like this (not needed if you don’t use profiles):<br />
+shutter -a -p=myprofile</p>
+<p>Maybe we should add this option in a future release.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=11428#respond' onclick='return addComment.moveForm( "comment-11428", "11428", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-even depth-1" id="li-comment-10434">
+   <div id="comment-10434" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://2.gravatar.com/avatar/57706afb7424cc71f8741f773c969f13?s=57&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/57706afb7424cc71f8741f773c969f13?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Arnaud</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-10434">March 28, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>This tool is FABULOUS.<br />
+I wish there will be one day video recording capabilities in shutter. If not, that is fine. Camtasia has no equivalent on Linux. Shutter could be the killer application with video recording.<br />
+I use it very often and love it.<br />
+A big applause to the developer. I have been using shutter since its infancy, now it&#8217;s a mature product. Great job. Tx again</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=10434#respond' onclick='return addComment.moveForm( "comment-10434", "10434", "respond", "96" )' aria-label='Reply to Arnaud'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+<ul class="children">
+   <li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-10496">
+   <div id="comment-10496" class="comment-body clearfix">
+		<div class="avatar">
+			<img alt='' src='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=57&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7e9a6de9744c2ecb423f5430c3d023c4?s=114&amp;d=mm&amp;r=g 2x' class='avatar avatar-57 photo' height='57' width='57' />			<span class="overlay"></span>
+		</div>
+		
+		<div class="comment-wrap">
+			
+			<div class="comment-author vcard">
+				<span class="fn">Romario</span> <div class="comment-meta commentmetadata"><a href="/faq-help/man-page/comment-page-2/#comment-10496">March 29, 2011</a></div>
+			</div>
+			
+						
+		    <div class="comment-content"><p>Thank you very much. I am glad you like Shutter. I don&#8217;t think that there will be video recording any time soon because we do not have enough man-power.</p>
+</div> <!-- end comment-content-->
+		    <div class="reply-container"><a rel='nofollow' class='comment-reply-link' href='/faq-help/man-page/?replytocom=10496#respond' onclick='return addComment.moveForm( "comment-10496", "10496", "respond", "96" )' aria-label='Reply to Romario'>reply</a></div>
+		</div> <!-- end comment-wrap-->  
+	</div> <!-- end comment-body-->
+	
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+		
+		<div class="navigation">
+			<div class="alignleft">
+				<a href="/faq-help/man-page/comment-page-1/#comments" >&laquo; Older Comments</a>			</div>
+			<div class="alignright">
+				<a href="/faq-help/man-page/comment-page-3/#comments" >Newer Comments &raquo;</a>			</div>
+		</div>
+		
+		<div id="trackbacks">
+		<br />
+		<br />
+		<h3 id="comments">Trackbacks/Pingbacks</h3>
+		<ol class="pinglist">
+				<li id="comment-8839"><a href='http://www.ubuntusecrets.it/2011/02/rilasciato-shutter-0-87-con-tante-piccole-novita/' rel='external nofollow' class='url'>Rilasciato Shutter 0.87 con tante piccole novità</a> - [...] Naturalmente queste sono solamente alcune delle possibilit&agrave; da terminale introdotte con la nuova versione. Per una lista completa &egrave;&hellip; 
+</li><!-- #comment-## -->
+		</ol>
+	</div>
+		
+
+	<div id="respond">
+		<h3 id="comments">
+			Leave a Reply		</h3>
+		<div class="cancel-comment-reply"> <small>
+			<a rel="nofollow" id="cancel-comment-reply-link" href="/faq-help/man-page/comment-page-2/#respond" style="display:none;">Click here to cancel reply.</a>			</small> </div> <!-- end cancel-comment-reply div -->
+					<form action="/wp-comments-post.php" method="post" id="commentform">
+							<p>
+					<input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+					<label for="author"><small>Name						(required)						</small></label>
+				</p>
+				<p>
+					<input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+					<label for="email"><small>Mail (will not be published)						(required)						</small></label>
+				</p>
+				<p>
+					<input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+					<label for="url"><small>Website</small></label>
+				</p>
+						<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+			<p>
+				<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+			</p>
+			<p>
+				<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+				<input type='hidden' name='comment_post_ID' value='96' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+			</p>
+			<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="efaba5c489" /></p><p style="clear: both;" class="subscribe-to-comments">
+			<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+			<label for="subscribe">Notify me of followup comments via e-mail</label>
+			</p><div class="g-recaptcha" data-sitekey="6LefUL0SAAAAAGPdQ0mADSfhYrPqNul7zUMIbSI4" data-theme="standard"></div><script type="text/javascript"src="https://www.google.com/recaptcha/api.js?hl=en"></script>            <div id="recaptcha-submit-btn-area">&nbsp;</div>
+            <noscript>
+            <style type='text/css'>#submit {display:none;}</style>
+            <input name="submit" type="submit" id="submit-alt" tabindex="6"
+                value="Submit Comment"/> 
+            </noscript><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="66"/></p>			</form>
+			</div> <!-- end respond div -->
+</div>			
+		</div> <!-- end #content-area -->
+		
+		<div id="sidebar">
+	
+	<div id="text-345411014" class="widget widget_text"><h3 class="widgettitle">Find us on Launchpad</h3>			<div class="textwidget"><a href="https://launchpad.net/shutter"><img src="http://media.launchpad.net/lp-badge-kit/launchpad-badge-w160px.png" alt="Launchpad logo" style="border: none;"></a></div>
+		</div> <!-- end .widget --><div id="social-widget-3" class="widget Social_Widget"><h3 class="widgettitle">Follow Us!</h3><div class="socialmedia-buttons smw_left"><a href="http://facebook.com/shutter.project" rel="nofollow" target="_blank"><img width="32" height="32" src="/wp-content/plugins/social-media-widget/images/default/32/facebook.png" 
+				alt="Follow Us on Facebook" 
+				title="Follow Us on Facebook" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="https://plus.google.com/103066453717145238737" rel="publisher" target="_blank"><img width="32" height="32" src="/wp-content/plugins/social-media-widget/images/default/32/googleplus.png" 
+				alt="Follow Us on Google+" 
+				title="Follow Us on Google+" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="http://twitter.com/#!/shutterproj" rel="nofollow" target="_blank"><img width="32" height="32" src="/wp-content/plugins/social-media-widget/images/default/32/twitter.png" 
+				alt="Follow Us on Twitter" 
+				title="Follow Us on Twitter" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a></div></div> <!-- end .widget --><div id="rss-4" class="widget widget_rss"><h3 class="widgettitle"><a class="rsswidget" href="http://gplusrss.com/rss/feed/ecb5bade5c10f67dded542e433ada23d4fd9d50f40ed1"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="https://plus.google.com/103066453717145238737">News</a></h3><ul><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/Y2D3DUCZkZe'>Shutter 0.93.1 fixes a few minor bugs and adds updated translations.</a> <span class="rss-date">December 24, 2014</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/RHUffaakUKU'>We are featured on the main page of +heise online (a very popular German news portal)! Thanks +Liane...</a> <span class="rss-date">August 19, 2014</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/91J5FwSnYRC'>Shutter 0.93 released. This release improves Shutter&#039;s Dropbox integration and adds support for vgy.me...</a> <span class="rss-date">August 17, 2014</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/boYi25bq7tE'>Want to contribute? We now also accept Bitcoin donations - thanks for your support! </a> <span class="rss-date">August 10, 2014</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/bescNhVVU8V'>Shutter 0.92 released!﻿</a> <span class="rss-date">August 10, 2014</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/eeGabXMq8mZ'>Shutter 0.91 released!﻿</a> <span class="rss-date">June 14, 2014</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/5NhvTXfhaA9'>Reshared post from Lucas Romero Di Benedetto (UnplaceHolder):</a> <span class="rss-date">September 1, 2013</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/6MfR8R5vtPN'>Reshared post from Lucas Romero Di Benedetto (UnplaceHolder):</a> <span class="rss-date">August 27, 2013</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/VTrzwkHTFCa'>Shutter 0.90.1 released!</a> <span class="rss-date">August 25, 2013</span></li><li><a class='rsswidget' href='https://plus.google.com/+Shutter-projectOrg/posts/1K5i8x6rD5C'>+DeimHart Thanks for your kind words (33:10 for those who speak German).</a> <span class="rss-date">February 18, 2013</span></li></ul></div> <!-- end .widget -->
+<!---Begin Display of Random Image sidebar widget-->
+<div id="random_image-2" class="widget widget_many"><h3 class="widgettitle">Screenshots</h3><!--Searching /home/www/shutter/wordpress/wp-content/uploads/random: found 78 images in 0.00022699999999998 seconds-->
+<div id="random_image_wrapper" style="text-align:center;"><span></span>
+<a href="/screenshots/"><img style = "padding: 3px 3px 3px 3px;" src="/wp-content/uploads/random/screenshot_059.png" width="240" alt="" /></a>
+
+
+</div>
+<!---Displayed in 0.010819 seconds.-->
+</div> <!-- end .widget --><div id="text-345411011" class="widget widget_text"><h3 class="widgettitle">Support Us</h3>			<div class="textwidget">Shutter is an open-source program, and is available completely for free!
+<p>
+If you like Shutter and find it useful, help keep it actively developed by clicking the donate button or sending me a gift from my Amazon wishlist. You can even flattr our thing!
+</p>
+<div style="text-align: center;">
+
+<br />
+<a class="FlattrButton" style="display:none;" href=""></a>
+<noscript><a href="http://flattr.com/thing/23370/Shutter-Screenshot-Tool" target="_blank">
+<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
+
+<br />
+<br />
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4240942">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+</form>
+<br />
+<br />
+<div class="btcpScWrapper"><div id="btcpSc434" class="btcpScQrcode" title="37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"></div><div class="btcpScAddress"><a href="bitcoin:37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2">37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2</a></div><script>
+						jQuery('#btcpSc434').qrcode({
+							render	: "canvas",
+							width	: "150",
+							height	: "150",
+							text	: "bitcoin:37UJTvgLxsRcuksCzVcqDZDfA5UEXyzeg2"
+						});	
+					</script></div>
+</div></div>
+		</div> <!-- end .widget -->		<div id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widgettitle">Latest Articles</h3>		<ul>
+					<li>
+				<a href="/2014/12/new-bugfix-release-0-93-1/">New bugfix release 0.93.1</a>
+						</li>
+					<li>
+				<a href="/2014/08/shutter-0-93-released/">Shutter 0.93 released</a>
+						</li>
+					<li>
+				<a href="/2014/08/new-bugfix-release-0-92/">New bugfix release 0.92</a>
+						</li>
+					<li>
+				<a href="/2014/06/new-bugfix-release-0-91/">New bugfix release 0.91</a>
+						</li>
+					<li>
+				<a href="/2013/08/new-bugfix-release-0-90-1/">New bugfix release 0.90.1</a>
+						</li>
+				</ul>
+		</div> <!-- end .widget -->				
+</div> <!-- end #sidebar -->		
+	</div> <!-- end #content -->
+	<div id="content-bottom" class="bottom-alt"></div>
+	
+		<div id="footer" class="clearfix">
+
+
+<p id="copyright">Designed by  <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> | Powered by  <a href="http://www.wordpress.org">Wordpress</a></p>
+
+
+		</div> <!-- end #footer -->
+		
+	</div> <!-- end #container -->	
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/jquery.cycle.all.min.js"></script> 
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/superfish.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/TheProfessional/js/jquery.lavalamp.1.3.3-min.js"></script>	
+	<script type="text/javascript">
+	//<![CDATA[
+		jQuery.noConflict();
+	
+		jQuery('ul.nav').superfish({ 
+			delay:       200,                            // one second delay on mouseout 
+			animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation 
+			speed:       'fast',                          // faster animation speed 
+			autoArrows:  true,                           // disable generation of arrow mark-up 
+			dropShadows: false                            // disable drop shadows 
+		});
+		
+		jQuery('ul.nav > li > a.sf-with-ul').parent('li').addClass('sf-ul');
+		
+		
+		<!---- lavalamp ---->
+		jQuery('ul.nav ul > li').addClass('noLava');
+			
+		var startLink = 0;
+		
+		jQuery('ul.nav > li.current-cat-parent, ul.nav > li.current-cat, ul.nav > li.current_page_parent, ul.nav > li.current_page_item').each(function(){
+			startLink = jQuery(this).prevAll().length;
+		});
+		
+		jQuery('ul.nav').lavaLamp({ startItem: startLink });
+		if ( startLink !=0 ) jQuery('ul.nav > li.backLava').animate({left:'+=2'},0);
+		
+		
+		et_search_bar();
+		et_cycle_integration();
+		
+				
+		jQuery('#controllers-main a').hover(function(){
+			jQuery(this).find('span.tooltip').animate({ opacity: 'show', left: '-222px' }, 300);
+		},function(){
+			jQuery(this).find('span.tooltip').animate({ opacity: 'hide', left: '-232px' }, 300);
+		}); 
+		
+		
+		function et_cycle_integration(){
+			var $featured = jQuery('#featured'),
+				$featured_content = jQuery('#slides'),
+				$controller = jQuery('#controllers'),
+				$slider_control_tab = $controller.find('a');
+		
+			if ($featured_content.length) {
+				$controller.css("opacity","0").find('a img').css("opacity","0.7").end().find('a.active img').css("opacity","1");
+				
+				$featured_content.cycle({
+					fx: 'fade',
+					timeout: 0,
+					speed: 700,
+					cleartypeNoBg: true
+				});
+				
+			};
+			
+			var pause_scroll = false;
+			
+			jQuery('#slides, #controllers').hover(function(){
+				$controller.stop().animate({opacity: 1, top: "30px"},500);
+							}).mouseleave(function(){
+				$controller.stop().animate({opacity: 0, top: "15px"},500);
+							});
+			
+			$slider_control_tab.hover(function(){
+				jQuery(this).find('img').stop().animate({opacity: 1},300);
+			}).mouseleave(function(){
+				if (!jQuery(this).hasClass("active")) jQuery(this).find('img').stop().animate({opacity: 0.7},300);
+			});
+			
+			
+			var ordernum;				
+			
+			function gonext(this_element){
+				$controller.find("a.active img").stop().animate({opacity: 0.7},300).parent('a').removeClass('active');
+				
+				this_element.addClass('active').find('img').stop().animate({opacity: 1},300);
+				
+				ordernum = this_element.attr("rel");
+				$featured_content.cycle(ordernum-1);
+				
+				if (typeof interval != 'undefined') {
+					clearInterval(interval);
+					auto_rotate();
+				};
+			}
+			
+			$slider_control_tab.click(function(){
+				gonext(jQuery(this));
+				return false;
+			});
+			
+			
+			var $nextArrow = jQuery('a#right-arrow'),
+				$prevArrow = jQuery('a#left-arrow');
+			
+			$nextArrow.click(function(){
+				var activeSlide = $controller.find('a.active').attr("rel"),
+					$nextSlide = $controller.find('a:eq('+ activeSlide +')');
+				
+				if ($nextSlide.length) gonext($nextSlide)
+				else gonext($controller.find('a:eq(0)'));
+				
+				return false;
+			});
+			
+			$prevArrow.click(function(){
+				var activeSlide = $controller.find('a.active').attr("rel")-2,
+					$nextSlide = $controller.find('a:eq('+ activeSlide +')');
+								
+				if ($nextSlide.length && activeSlide != -1) { gonext($nextSlide); }
+				else {
+					var slidesNum = $slider_control_tab.length - 1;
+					gonext($controller.find('a:eq('+ slidesNum +')'));
+				};
+				
+				return false;
+			});
+					
+						
+						
+			function auto_rotate(){
+				interval = setInterval(function() {
+					if (!pause_scroll) $nextArrow.click();
+				}, 4000);
+			};
+				
+		};
+		
+		
+		<!---- Search Bar Improvements ---->
+		function et_search_bar(){
+			var $searchform = jQuery('#menu div#search-form'),
+				$searchinput = $searchform.find("input#searchinput"),
+				searchvalue = $searchinput.val();
+				
+			$searchinput.focus(function(){
+				if (jQuery(this).val() === searchvalue) jQuery(this).val("");
+			}).blur(function(){
+				if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
+			});
+		};
+		
+				
+	//]]>	
+	</script>	<!-- Piwik plugin active -->				<!-- Piwik code inserted by Piwik Analytics Wordpress plugin by Jules Stuifbergen http://forwardslash.nl/piwik-analytics/ -->
+				<script type="text/javascript">
+									var pkBaseURL = document.location.protocol + "//" + document.location.host + "/piwik/";
+								document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+				</script><script type="text/javascript">
+				try {
+				var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+				piwikTracker.setDocumentTitle(document.title);
+				piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+							} catch( err ) {}
+				</script>
+				<!-- /Piwik -->
+	            <script type="text/javascript">
+            var sub = document.getElementById('submit');
+            document.getElementById('recaptcha-submit-btn-area').appendChild (sub);
+            document.getElementById('submit').tabIndex = 6;
+            if ( typeof _recaptcha_wordpress_savedcomment != 'undefined') {
+                document.getElementById('comment').value = 
+                    _recaptcha_wordpress_savedcomment;
+            }
+            </script><script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=4.8.1'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/akismet/_inc/form.js?ver=3.3.3'></script>
+	
+</body>
+</html>

@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Shutter - Feature-rich Screenshot Tool</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#copyright">COPYRIGHT</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#capture_mode_options">CAPTURE MODE OPTIONS</a></li>
+		<li><a href="#settings_options">SETTINGS OPTIONS</a></li>
+		<li><a href="#application_options">APPLICATION OPTIONS</a></li>
+	</ul>
+
+	<li><a href="#bug_reports">BUG REPORTS</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>Shutter - Feature-rich Screenshot Tool</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>shutter [options] [file ...]</p>
+<p>
+</p>
+<hr />
+<h1><a name="copyright">COPYRIGHT</a></h1>
+<p>Shutter is Copyright (C) by Mario Kemper and Shutter Team</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p><strong>Shutter</strong> is a feature-rich screenshot program. You can take a screenshot of a specific area, window, your whole screen, or even of a website - apply different effects to it, draw on it to highlight points, and then upload to an image hosting site, all within one window.</p>
+<pre>
+
+=head1 OPTIONS</pre>
+<dl>
+<dt><strong><a name="example_1" class="item">Example 1</a></strong></dt>
+
+<dd>
+<p>shutter -a -p=myprofile --min_at_startup</p>
+</dd>
+<dt><strong><a name="example_2" class="item">Example 2</a></strong></dt>
+
+<dd>
+<p>shutter -s=100,100,300,300 -e</p>
+</dd>
+<dt><strong><a name="example_3" class="item">Example 3</a></strong></dt>
+
+<dd>
+<p>shutter --window=.*firefox.*</p>
+</dd>
+<dt><strong><a name="example_4" class="item">Example 4</a></strong></dt>
+
+<dd>
+<p>shutter --web=/ -e</p>
+</dd>
+</dl>
+<p>
+</p>
+<h2><a name="capture_mode_options">CAPTURE MODE OPTIONS</a></h2>
+<dl>
+<dt><strong><a name="s_select_x_y_width_height" class="item"><strong>-s, --select=[X,Y,WIDTH,HEIGHT]</strong></a></strong></dt>
+
+<dd>
+<p>Capture an area of the screen. Providing X,Y,WIDTH,HEIGHT is optional.</p>
+</dd>
+<dt><strong><a name="f_full" class="item"><strong>-f, --full</strong></a></strong></dt>
+
+<dd>
+<p>Capture the entire screen.</p>
+</dd>
+<dt><strong><a name="w_window_name_pattern" class="item"><strong>-w, --window=[NAME_PATTERN]</strong></a></strong></dt>
+
+<dd>
+<p>Select a window to capture. Providing a NAME_PATTERN (Perl-style regex) ist optional.</p>
+</dd>
+<dt><strong><a name="a_active" class="item"><strong>-a, --active</strong></a></strong></dt>
+
+<dd>
+<p>Capture the current active window.</p>
+</dd>
+<dt><strong><a name="section" class="item"><strong>--section</strong></a></strong></dt>
+
+<dd>
+<p>Capture a section. You will be able to select any child window by moving the mouse over it.</p>
+</dd>
+<dt><strong><a name="m_menu" class="item"><strong>-m, --menu</strong></a></strong></dt>
+
+<dd>
+<p>Capture a menu.</p>
+</dd>
+<dt><strong><a name="t_tooltip" class="item"><strong>-t, --tooltip</strong></a></strong></dt>
+
+<dd>
+<p>Capture a tooltip.</p>
+</dd>
+<dt><strong><a name="web_url" class="item"><strong>--web=[URL]</strong></a></strong></dt>
+
+<dd>
+<p>Capture a webpage. Providing an URL ist optional.</p>
+</dd>
+<dt><strong><a name="r_redo" class="item"><strong>-r, --redo</strong></a></strong></dt>
+
+<dd>
+<p>Redo last screenshot.</p>
+</dd>
+</dl>
+<p>
+</p>
+<h2><a name="settings_options">SETTINGS OPTIONS</a></h2>
+<dl>
+<dt><strong><a name="p_profile_name" class="item"><strong>-p, --profile=NAME</strong></a></strong></dt>
+
+<dd>
+<p>Load a specific profile on startup.</p>
+</dd>
+</dl>
+<p>
+</p>
+<h2><a name="application_options">APPLICATION OPTIONS</a></h2>
+<dl>
+<dt><strong><a name="h_help" class="item"><strong>-h, --help</strong></a></strong></dt>
+
+<dd>
+<p>Prints a brief help message and exits.</p>
+</dd>
+<dt><strong><a name="man" class="item"><strong>--man</strong></a></strong></dt>
+
+<dd>
+<p>Prints the manual page and exits.</p>
+</dd>
+<dt><strong><a name="v_version" class="item"><strong>-v, --version</strong></a></strong></dt>
+
+<dd>
+<p>Prints version information.</p>
+</dd>
+<dt><strong><a name="d_debug" class="item"><strong>-d, --debug</strong></a></strong></dt>
+
+<dd>
+<p>Prints a lot of debugging information to STDOUT.</p>
+</dd>
+<dt><strong><a name="clear_cache" class="item"><strong>--clear_cache</strong></a></strong></dt>
+
+<dd>
+<p>Clears cache, e.g. installed plugins, at startup.</p>
+</dd>
+<dt><strong><a name="min_at_startup" class="item"><strong>--min_at_startup</strong></a></strong></dt>
+
+<dd>
+<p>Starts Shutter minimized to tray.</p>
+</dd>
+<dt><strong><a name="disable_systray" class="item"><strong>--disable_systray</strong></a></strong></dt>
+
+<dd>
+<p>Disables systray icon.</p>
+</dd>
+<dt><strong><a name="e_exit_after_capture" class="item"><strong>-e, --exit_after_capture</strong></a></strong></dt>
+
+<dd>
+<p>Exit after the first capture has been made. This is useful when using Shutter in scripts.</p>
+</dd>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="bug_reports">BUG REPORTS</a></h1>
+<p>If you find a bug in Shutter, you should report it.  But first, you should make sure that it really is a bug, and that it appears in the latest version of Shutter.</p>
+<p>The latest version is always available from:
+<strong><a href="https://launchpad.net/shutter">https://launchpad.net/shutter</a></strong></p>
+<p>Once you have determined that a bug actually exists, please report it at launchpad:
+<strong><a href="https://bugs.launchpad.net/shutter/+filebug">https://bugs.launchpad.net/shutter/+filebug</a></strong></p>
+
+</body>
+
+</html>
