@@ -177,57 +177,8 @@ img.emoji {
 <!---Displayed in 0.0035259999999999 seconds.-->
 <p>This is a step-by-step procedure for installing Shutter on Ubuntu, aimed at beginners or users who rarely worked with PPAs (Personal Package Archives) before.</p>
 <div id="result_box" style="text-align: left;" dir="ltr">
-<p><strong>Please note: This guide applies only to Ubuntu.</strong></p>
-<h2>Ubuntu 9.10 (Karmic) and later</h2>
-<ol>
-<li>You can add a PPA to your system with a single line in your terminal. Open a terminal and enter:</li>
-<pre>sudo add-apt-repository ppa:shutter/ppa</pre>
-<li>Now, as a one-off, you should tell your system to pull down the latest list of software from each archive it knows about, including the PPA you just added:</li>
-<pre>sudo apt-get update</pre>
-<li>Install Shutter</li>
-<pre>sudo apt-get install shutter</pre>
-</ol>
-<h2>On older (pre 9.10) Ubuntu systems</h2>
-</div>
-<ol>
-<li>Add Shutter PPA to your &#8216;Software Sources&#8217;<br />
-Navigate to <em>System</em> ▸ <em>Administration</em> ▸ <em>Software Sources</em><br />
-<a href="/wp-content/uploads/step1.png" rel="shadowbox[sbpost-243];player=img;"><img class="alignnone size-medium wp-image-247" title="step1" src="/wp-content/uploads/step1-269x300.png" alt="" width="269" height="300" srcset="/wp-content/uploads/step1-269x300.png 269w, /wp-content/uploads/step1.png 646w" sizes="(max-width: 269px) 100vw, 269px" /><br />
-</a></li>
-<li>Visit our PPA (hosted at Launchpad.net  &#8211; <a href="https://launchpad.net/~shutter/+archive/ppa" target="_blank">https://launchpad.net/~shutter/+archive/ppa</a>)<br />
-Select your Ubuntu release and copy the first line into your clipboard (Ctrl+C) as shown below.<br />
-<a href="/wp-content/uploads/step2_new.png" rel="shadowbox[sbpost-243];player=img;"><img class="alignnone size-medium wp-image-416" title="step2_new2" src="/wp-content/uploads/step2_new2-300x149.png" alt="step2_new2" width="300" height="149" srcset="/wp-content/uploads/step2_new2-300x149.png 300w, /wp-content/uploads/step2_new2.png 675w" sizes="(max-width: 300px) 100vw, 300px" /><br />
-</a></li>
-<li>Each PPA has its own unique key that is used to sign the packages in that archive. To add the PPA&#8217;s key to your own system open a terminal and enter<span style="color: #ff0000;"><span style="color: #000000;"> </span></span>:
-<pre><span style="font-size: xx-small;">wget -q https://shutter-project.org/shutter-ppa.key -O- | sudo apt-key add -</span></pre>
-<p><a href="/wp-content/uploads/step2_1_new.png" rel="shadowbox[sbpost-243];player=img;" title="step2_1_new"><img class="alignnone size-medium wp-image-422" title="step2_1_new" src="/wp-content/uploads/step2_1_new-300x70.png" alt="step2_1_new" width="300" height="70" srcset="/wp-content/uploads/step2_1_new-300x70.png 300w, /wp-content/uploads/step2_1_new.png 597w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p><span style="color: #ff0000;">Hint: <span style="color: #888888;"> </span></span>Don&#8217;t forget the trailing dash. You&#8217;ll see a confirming &#8216;OK&#8217; when the command was successfull.<span style="color: #ff0000;"><span style="color: #888888;"><br />
-</span></span></p>
-<p>(Until you add the PPA&#8217;s key to your own system, you&#8217;ll see warnings that you&#8217;re downloading from an untrusted source)</li>
-<li>Return to the &#8216;Software Sources&#8217; window, navigate to the <em>Third Party Software</em> tab and hit the <em>Add</em> button.<br />
-<a href="/wp-content/uploads/step3.png" rel="shadowbox[sbpost-243];player=img;"><img class="alignnone size-medium wp-image-249" title="step3" src="/wp-content/uploads/step3-296x300.png" alt="" width="296" height="300" srcset="/wp-content/uploads/step3-296x300.png 296w, /wp-content/uploads/step3.png 483w" sizes="(max-width: 296px) 100vw, 296px" /><br />
-</a></li>
-<li>Paste your clipboard content into the entry box of the following popup to add our repository to the list of software sources. Then click on <em>Add Source</em>.<br />
-<a href="/wp-content/uploads/step4_new.png" rel="shadowbox[sbpost-243];player=img;"><img class="alignnone size-medium wp-image-419" title="step4_new" src="/wp-content/uploads/step4_new-300x270.png" alt="step4_new" width="300" height="270" srcset="/wp-content/uploads/step4_new-300x270.png 300w, /wp-content/uploads/step4_new.png 675w" sizes="(max-width: 300px) 100vw, 300px" /><br />
-</a></li>
-<li>If everything worked as expected our repository should be activated now. You can now close the window.<br />
-<a href="/wp-content/uploads/step5_new.png" rel="shadowbox[sbpost-243];player=img;"><img class="alignnone size-medium wp-image-420" title="step5_new" src="/wp-content/uploads/step5_new-300x270.png" alt="step5_new" width="300" height="270" srcset="/wp-content/uploads/step5_new-300x270.png 300w, /wp-content/uploads/step5_new.png 675w" sizes="(max-width: 300px) 100vw, 300px" /><br />
-</a></li>
-<li>When prompted to &#8216;Reload the information about available software&#8217; press <em>Reload</em> and wait for the operation to complete.<br />
-<a href="/wp-content/uploads/step6.png" rel="shadowbox[sbpost-243];player=img;"><img class="alignnone size-medium wp-image-252" title="step6" src="/wp-content/uploads/step6-296x300.png" alt="" width="296" height="300" srcset="/wp-content/uploads/step6-296x300.png 296w, /wp-content/uploads/step6.png 483w" sizes="(max-width: 296px) 100vw, 296px" /><br />
-</a></li>
-<li>Now, just <a class="piwik_download" href="apt:shutter">click here to install Shutter</a> (using <a href="https://help.ubuntu.com/community/AptURL">AptURL</a>)<br />
-<a href="/wp-content/uploads/step9_new.png" rel="shadowbox[sbpost-243];player=img;" title="step9_new"><img class="alignnone size-medium wp-image-426" title="step9_new" src="/wp-content/uploads/step9_new-300x242.png" alt="step9_new" width="300" height="242" srcset="/wp-content/uploads/step9_new-300x242.png 300w, /wp-content/uploads/step9_new.png 476w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p><br class="spacer_" /></p>
-<p>or open a terminal and enter:</p>
-<pre>sudo apt-get install shutter</pre>
-</li>
-<li>After the package manager has done its work you will be able to start Shutter for the first time using the menu entry.<br />
-<a href="/wp-content/uploads/step10_new.png" rel="shadowbox[sbpost-243];player=img;" title="step10_new"><img class="alignnone size-medium wp-image-423" title="step10_new" src="/wp-content/uploads/step10_new-168x300.png" alt="step10_new" width="168" height="300" srcset="/wp-content/uploads/step10_new-168x300.png 168w, /wp-content/uploads/step10_new.png 398w" sizes="(max-width: 168px) 100vw, 168px" /></a><br />
-<a href="/wp-content/uploads/step10.png" rel="shadowbox[sbpost-243];player=img;"><br />
-</a></li>
-</ol>
-								
+
+<p>The official PPA is currently unmaintained. Please use the unofficial PPA by linuxuprising <a href="https://www.linuxuprising.com/2018/10/shutter-removed-from-ubuntu-1810-and.html" target="_blank">here</a>.								
 
 <br />
 <br />
@@ -256,6 +207,7 @@ Select your Ubuntu release and copy the first line into your clipboard (Ctrl+C) 
 
 </div>
 <!---Displayed in 0.003434 seconds.-->
+
 </div> <!-- end .widget --><div id="text-345411011" class="widget widget_text"><h3 class="widgettitle">Support Us</h3>			<div class="textwidget">Shutter is an open-source program, and is available completely for free!
 <p>
 If you like Shutter and find it useful, help keep it actively developed by clicking the donate button or sending me a gift from my Amazon wishlist. You can even flattr our thing!
@@ -454,19 +406,7 @@ If you like Shutter and find it useful, help keep it actively developed by click
 		
 				
 	//]]>	
-	</script>	<!-- Piwik plugin active -->				<!-- Piwik code inserted by Piwik Analytics Wordpress plugin by Jules Stuifbergen http://forwardslash.nl/piwik-analytics/ -->
-				<script type="text/javascript">
-									var pkBaseURL = document.location.protocol + "//" + document.location.host + "/piwik/";
-								document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-				</script><script type="text/javascript">
-				try {
-				var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-				piwikTracker.setDocumentTitle(document.title);
-				piwikTracker.trackPageView();
-							piwikTracker.enableLinkTracking();
-							} catch( err ) {}
-				</script>
-				<!-- /Piwik -->
+	</script>	
 	<script type='text/javascript' src='/wp-content/uploads/shadowbox-js/8278176c6b87eebc499e10a3b55de301.js?ver=3.0.3'></script>
 <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script>
 
@@ -510,7 +450,6 @@ If you like Shutter and find it useful, help keep it actively developed by click
 /* ]]> */
 </script>
 <!-- End Shadowbox JS -->
-
 	
 </body>
 </html>
